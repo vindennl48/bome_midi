@@ -44,7 +44,8 @@ def get_body():
 
     body = {
         "Inputs"  : inputs,
-        "Outputs" : outputs
+        "Outputs" : outputs,
+        "Events"  : events
     }
 
     return body

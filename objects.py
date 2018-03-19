@@ -5,6 +5,7 @@ from nice_json import json_print_pretty
 Summary:
  - def init_variables()
  - def get_new_global_var(device, start_value=0)
+ - def get_global_var(device)
  - def get_new_note(ch=1, note=-1) # device, note_type
  - def n(note=-1, ch=1)
  - def init_connections(body)
@@ -58,6 +59,14 @@ def get_new_global_var(device, start_value=0):
 # get an unused global var
 
 
+# get global var given device name
+def get_global_var(device):
+    global_vars = oc._get("global_vars")
+    g = (g for g in global_vars if g['Taken'] == device).next()
+    return g['Var']
+# get global var given device name
+
+
 # get new note
 def get_new_note(ch=1, note=-1): # device, note_type
     notes = oc._get("notes")
@@ -92,40 +101,65 @@ def n(note=-1, ch=1):
 def init_connections(body):
     outputs  = body['Outputs']
     inputs   = body['Inputs']
+    events   = body['Events']
 
     keys = inputs.keys()
     for name in keys:
 
         btn       = inputs[name]
-        out       = outputs[btn['To']]
+        if btn['To'] in outputs:
+            out       = outputs[btn['To']]
 
-        note_in   = btn['Note']
-        type_in   = btn['Type']
-        ch_in     = btn['Channel']
-        ports_in  = btn['Ports']
+            note_in   = btn['Note']
+            type_in   = btn['Type']
+            ch_in     = btn['Channel']
+            ports_in  = btn['Ports']
 
-        note_out  = out['Note']
-        type_out  = out['Type']
-        ch_out    = out['Channel']
-        ports_out = out['Ports']
+            note_out  = out['Note']
+            type_out  = out['Type']
+            ch_out    = out['Channel']
+            ports_out = out['Ports']
 
-        c = oc._add(
-            btn['To'],
-            {
-                "Name"      : btn['To'],
-                "Note_In"   : note_in,
-                "Type_In"   : type_in,
-                "Ch_In"     : ch_in,
-                "Ports_In"  : ports_in,
+            c = oc._add(
+                btn['To'],
+                {
+                    "Name"      : btn['To'],
+                    "Note_In"   : note_in,
+                    "Type_In"   : type_in,
+                    "Ch_In"     : ch_in,
+                    "Ports_In"  : ports_in,
 
-                "Note_Out"  : note_out,
-                "Type_Out"  : type_out,
-                "Ch Out"    : ch_out,
-                "Ports_Out" : ports_out,
-                "gvar"      : get_new_global_var(name, out['Start Val']) if \
-                              type_out == "cc" else ""
-            }
-        )
+                    "Note_Out"  : note_out,
+                    "Type_Out"  : type_out,
+                    "Ch Out"    : ch_out,
+                    "Ports_Out" : ports_out,
+                    "gvar"      : get_new_global_var(name, out['Start Val']) if \
+                                type_out == "cc" else ""
+                }
+            )
+        elif btn['To'] in events:
+            out        = events[btn['To']]
+
+            note_in    = btn['Note']
+            type_in    = btn['Type']
+            ch_in      = btn['Channel']
+            ports_in   = btn['Ports']
+
+            event_list = out['Output']
+
+            c = oc._add(
+                btn['To'],
+                {
+                    "Name"      : btn['To'],
+                    "Note_In"   : note_in,
+                    "Type_In"   : type_in,
+                    "Ch_In"     : ch_in,
+                    "Ports_In"  : ports_in,
+
+                    "Event_List": event_list,
+                }
+            )
+
         print(c)
 # init_connections
 
