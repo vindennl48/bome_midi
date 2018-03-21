@@ -1,6 +1,7 @@
 from ObjectContainer import ObjectContainer as oc
 from nice_json import json_print_pretty
 
+
 '''
 Summary:
  - def init_variables()
@@ -8,8 +9,6 @@ Summary:
  - def get_global_var(device)
  - def get_new_note(ch=1, note=-1) # device, note_type
  - def n(note=-1, ch=1)
- - def init_connections(body)
- - def get_details(name)
 '''
 
 
@@ -95,82 +94,3 @@ def n(note=-1, ch=1):
         result = get_new_note(ch=ch)
     return result
 # n()
-
-
-## # set new note
-## def set_new_note(device, note, note_type):
-##     notes = oc._get("notes")
-##     n = (n for n in notes if n['Note'] == note).next()
-##     n['Taken'] = device
-##     n['Type']  = note_type
-##     return n
-## # set new note
-## 
-## # init_midi_device
-## def init_midi_device(midi_devices):
-##     for md in midi_devices:
-##         device = {
-##             "Type"     : md['Type'],
-##             "Channel"  : md['Channel'],
-##             "Ports"    : md['Ports'],
-##             "Toggles"  : init_toggles(md['Toggles']),
-##             "Buttons"  : init_buttons(md['Buttons']),
-##             "Sliders"  : init_sliders(md['Sliders'])
-##         }
-##         oc._add(md['Name'], device)
-## # init_midi_device
-## 
-## # init_daw
-## def init_daw(daws):
-##     for d in daws:
-##         new_daw = {
-##             "Channel"  : d['Channel'],
-##             "Ports"    : d['Ports'],
-##             "Toggles"  : init_toggles(d['Toggles']),
-##             "Buttons"  : init_buttons(d['Buttons']),
-##             "Sliders"  : init_sliders(d['Sliders'])
-##         }
-##         oc._add(d['Name'], new_daw)
-## # init_daw
-##
-## # init_toggles
-## def init_toggles(toggles):
-##     result = {}
-##     keys = toggles.keys()
-##     for name in keys:
-##         note = toggles[name]
-##         if note != "auto":
-##             result[name] = set_new_note(name, note, "control change")
-##         else:
-##             result[name] = get_new_note(name, "control change")
-##         oc._add(name, result[name])
-##     return result
-## # init_toggles
-## 
-## # init_buttons
-## def init_buttons(buttons):
-##     result = {}
-##     keys = buttons.keys()
-##     for name in keys:
-##         note = buttons[name]
-##         if note != "auto":
-##             result[name] = set_new_note(name, note, "note on")
-##         else:
-##             result[name] = get_new_note(name, "note on")
-##         oc._add(name, result[name])
-##     return result
-## # init_buttons
-## 
-## # init_sliders
-## def init_sliders(sliders):
-##     result = {}
-##     keys = sliders.keys()
-##     for name in keys:
-##         note = sliders[name]
-##         if note != "auto":
-##             result[name] = set_new_note(name, note, "control change")
-##         else:
-##             result[name] = get_new_note(name, "control change")
-##         oc._add(name, result[name])
-##     return result
-## # init_sliders
