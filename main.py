@@ -3,6 +3,7 @@ from objects import init_variables, get_new_global_var, n, get_global_var
 from layout import endpoints, links, global_variables, footer
 from nice_json import json_print_pretty
 from bome_midi_convert import get_bome_midi, to_hex
+from GetArgs import getargs
 
 
 '''
@@ -22,24 +23,52 @@ Summary:
 
 
 def run():
+    myargs = getargs([
+        '--test', 'test_file',
+        '-s', 'save_file',
+        '-p',
+        '--json',
+        '-h', '--help'])
+    args = myargs.getargs()
+
     init_variables()
     body = get_body()
     create_globals(body)
 
-    presets = get_presets(body)
-#    print(json_print_pretty(presets))
-
+    presets        = get_presets(body)
     bome_midi_file = get_bome_midi(presets)
 
-#    test(bome_midi_file)
-    print('\n'.join(bome_midi_file))
+    if '--json' in args:
+        print(json_print_pretty(presets))
+    elif '-p' in args:
+        print('\n'.join(bome_midi_file))
+
+    if '-s' in args:
+        # save to file
+        with open('save_file') as f:
+            f.write(bome_midi_file)
+
+    if '--test' in args:
+        test(bome_midi_file, args['test_file'])
 
 
-def test(generated_file):
+    if ('--help' in args and len(args) == 1) or \
+       (len(args) == 0):
+        result =    '''
+        --json                 : print out json format before conversion to bomeMidi format
+        --test <bomeMidi file> : run a test with selected bomeMidi file to compare
+        -p                     : print out bomeMidi format
+        -s     <file name>     : save bomeMidi format as file
+        -h, --help             : print help
+        '''
+        print(result)
+
+
+def test(generated_file, file_to_test):
     test_passed = True
 
     test_file = []
-    with open('midi_template_test.bmtp') as f:
+    with open(file_to_test) as f:
         test_file = f.readlines()
 
     for i in range(len(test_file)-4):
@@ -170,6 +199,9 @@ def get_translators(body):
             'Ports'     : a['Ports']
         }
 
+        if a['Incoming']['Note Type'] == 'cc':
+            incoming['Note Value'] = get_global_var(a['Name'])
+
         try_get_endpoint = False
         try:
             b = get_endpoint(body, b)
@@ -213,7 +245,7 @@ def get_translators(body):
             options = create_options_header(link, options)
 
             translator = {
-                'Name'    : '{} -> {}'.format(a['Name'], b['Name']),
+                'Name'    : '{} -> {}'.format(a['Name'], b),
                 'Incoming': incoming,
                 'Options' : options,
             }

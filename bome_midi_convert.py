@@ -1,4 +1,5 @@
 from layout import footer
+from ObjectContainer import ObjectContainer as oc
 
 
 '''
@@ -109,6 +110,7 @@ def get_outgoing(t):
 
 def get_options(t):
     result = []
+
     for i, o in enumerate(t['Options']):
         if i == 0:
             #print out line as-is
@@ -123,15 +125,27 @@ def get_options(t):
             result.append( get_if(o) )
 
         elif o[:5] == 'label':
-            result.append(  get_label(o) )
+            result.append( get_label(o) )
 
         elif o[:4] == 'goto':
-            result.append(  get_goto(o) )
+            result.append( get_goto(o) )
+
+        elif '=' in o:
+            result.append( get_equation(o) )
 
         else:
             result.append( o )
 
     return ''.join(result)
+
+
+import re
+def get_equation(o):
+    global_vars = oc.items['global_vars']
+    for gv in global_vars:
+        if type(gv['Taken']) is str and gv['Taken'] in o:
+            o = re.sub(gv['Taken'],gv['Var'],o)
+    return o
 
 
 def get_comment(o):
