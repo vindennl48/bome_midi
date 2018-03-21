@@ -32,7 +32,7 @@ from super_secret_footer import footer_signature, footer_signed_by
 '''
 endpoints = [
     { 
-        'Name': 'fcb1010_btn_{}'.format(i),
+        'Name': 'fcb1010_btn_{:02d}'.format(i),
         'Incoming': {
             'Note'     : i,
             'Channel'  : 1,
@@ -47,7 +47,7 @@ endpoints = [
 ]
 endpoints += [
     {
-        'Name': 'fcb1010_exp_{}'.format(i),
+        'Name': 'fcb1010_exp_{:02d}'.format(i),
         'Incoming': {
             'Note'     : i+126,
             'Channel'  : 1,
@@ -101,14 +101,17 @@ endpoints += [
 '''
 '''
 links = [
-    {   'Link': ('fcb1010_btn_1',  'blind'),     'Options': [ 'current_song=blind' ]},
-    {   'Link': ('fcb1010_btn_2',  'old_pete'),  'Options': [ 'current_song=old_pete' ]},
-    {   'Link': ('fcb1010_btn_3',  'sono'),      'Options': [ 'current_song=sono' ]},
-    {   'Link': ('fcb1010_btn_4',  'petrichor'), 'Options': [ 'current_song=petrichor' ]},
-    {   'Link': ('fcb1010_btn_5',  'space'),     'Options': [ 'current_song=space' ]},
+    {   'Link': ('fcb1010_btn_01',  'blind'),     'Options': [ 'current_song=blind' ]},
+    {   'Link': ('fcb1010_btn_02',  'old_pete'),  'Options': [ 'current_song=old_pete' ]},
+    {   'Link': ('fcb1010_btn_03',  'sono'),      'Options': [ 'current_song=sono' ]},
+    {   'Link': ('fcb1010_btn_04',  'petrichor'), 'Options': [ 'current_song=petrichor' ]},
+    {   'Link': ('fcb1010_btn_05',  'space'),     'Options': [ 'current_song=space' ]},
 
     {   'Link': ('fcb1010_btn_11', 'fx_lowcut'), 'Options': []},
-    {   'Link': ('fcb1010_btn_11', 'fx_hicut'),  'Options': []},
+    {   'Link': ('fcb1010_btn_12', 'fx_hicut'),  'Options': []},
+    {   'Link': ('fcb1010_btn_13', 'fx_dist'),   'Options': []},
+    {   'Link': ('fcb1010_btn_14', 'fx_delay'),  'Options': []},
+    {   'Link': ('fcb1010_btn_15', 'fx_reverb'), 'Options': []},
 ]
 ################################################################################
 

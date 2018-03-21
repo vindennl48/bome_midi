@@ -3,6 +3,7 @@ from objects import init_variables, get_new_global_var, n, get_global_var
 from layout import endpoints, links, global_variables, footer
 from nice_json import json_print_pretty
 from bome_midi_convert import get_bome_midi, to_hex
+from bome_midi_convert import CUR_PRESET_ACTIVATED, PROJECT_FILE_OPENED, ACTIVATE_ONLY_BY_NAME
 from GetArgs import getargs
 
 
@@ -45,8 +46,8 @@ def run():
 
     if '-s' in args:
         # save to file
-        with open('save_file') as f:
-            f.write(bome_midi_file)
+        with open(args['save_file'],'w') as f:
+            f.write('\n'.join(bome_midi_file))
 
     if '--test' in args:
         test(bome_midi_file, args['test_file'])
@@ -130,6 +131,7 @@ def create_globals(body):
 def get_presets(body):
     presets = [ create_preset('init') ]
     presets.append( create_preset('links', body) ) 
+    presets.append( create_preset('setup', body) ) 
     return presets
 
 
@@ -151,6 +153,58 @@ def create_preset(options, body=None):
             'Psi'    : 0,
             'Translators': get_translators(body)
         }
+    elif options == 'setup':
+        result = {
+            'Name'   : 'Setup',
+            'Active' : 0,
+            'Psi'    : 0,
+            'Translators': get_setup(body)
+        }
+
+    return result
+
+
+def get_setup(body):
+    result  = []
+    outputs = []
+    for e in body['Endpoints']:
+        if 'Outgoing' in e:
+            outputs.append(e)
+
+    for o in outputs:
+
+        incoming = {
+            'Desc'      : o['Name'],
+            'Type'      : CUR_PRESET_ACTIVATED
+        }
+
+        outgoing = {
+            'Desc'      : o['Name'],
+            'Note'      : o['Outgoing']['Note'],
+            'Channel'   : o['Outgoing']['Channel'],
+            'Note Type' : o['Outgoing']['Note Type'],
+            'Ports'     : o['Ports']
+        }
+
+        if o['Outgoing']['Note Type'] == 'cc':
+            outgoing['Note Value'] = 127
+
+        translator = {
+            'Name'    : 'Output {}'.format(o['Name']),
+            'Incoming': incoming,
+            'Outgoing': outgoing,
+            'Options' : create_options_header({},[],active=0)
+        }
+
+        result.append(translator)
+
+    translator = {
+        'Name'      : 'Shut Down All',
+        'Incoming'  : { 'Type': CUR_PRESET_ACTIVATED },
+        'Outgoing'  : { 'Type': ACTIVATE_ONLY_BY_NAME('Setup') },
+        'Options'   : create_options_header({},{},active=1)
+    }
+    result.append(translator)
 
     return result
 
@@ -171,8 +225,9 @@ def get_global_start_values():
     options = create_options_header(len(rules), options)
 
     translator = {
-        'Name'    : 'Global Variables',
-        'Options' : options,
+        'Name'     : 'Global Variables',
+        'Incoming' : { 'Type':PROJECT_FILE_OPENED },
+        'Options'  : options,
     }
     return [ translator ]
 
@@ -190,6 +245,7 @@ def get_translators(body):
 
         a = get_endpoint(body, a)
         a_note = a['Incoming']['Note'] if a['Incoming']['Note'] != 'auto' else n(a['Incoming']['Channel'])
+        a['Incoming']['Note'] = a_note
 
         incoming = {
             'Desc'      : a['Name'],
@@ -212,10 +268,11 @@ def get_translators(body):
         if try_get_endpoint:
             if b['Outgoing']['Note'] == 'auto':
                 b_note = n(b['Outgoing']['Channel'])
-            elif b['Outgoing']['Note'] == 'Incoming':
+            elif b['Outgoing']['Note'].lower() == 'incoming':
                 b_note = a_note
             else:
                 b_note = b['Outgoing']['Note']
+            b['Outgoing']['Note'] = b_note
 #            b_note = b['Incoming']['Note'] if b['Incoming']['Note'] != 'auto' else n(b['Incoming']['Channel'])
 
             outgoing = {
@@ -278,7 +335,7 @@ def get_default_rules(a,b):
     return result
 
 
-def create_options_header(link, options):
+def create_options_header(link, options, active=1, stop=0, out=0):
     if type(link) is not dict:
         result = [ 'Actv01Stop00OutO00StMa{}'.format(to_hex(link, 8)) ]
     else:
@@ -290,7 +347,7 @@ def create_options_header(link, options):
         num_rules = len(options)
 
         result = [ 'Actv{:02d}Stop{:02d}OutO{:02d}{}StMa{}'.format(
-            1, 0, 0, delay, to_hex(num_rules, 8)
+            active, stop, out, delay, to_hex(num_rules, 8)
         ) ]
 
     result += options

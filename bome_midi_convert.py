@@ -16,6 +16,16 @@ Summary:
 '''
 
 
+# incoming options besides midi
+PROCESSING_ENABLED     = 'EnDi01'
+PROCESSING_DISABLED    = 'EnDi00'
+PROJECT_FILE_OPENED    = 'EnDi02'
+CUR_PRESET_ACTIVATED   = 'Pres080000'  # when current preset is activated
+CUR_PRESET_DEACTIVATED = 'Pres090000'  # when current preset is deactivated
+def ACTIVATE_ONLY_BY_NAME(name):            # activate preset by name
+    return 'Pres02{}{}'.format(to_hex(len(name),4),name)
+
+
 def get_bome_midi(presets):
     result = []
 
@@ -44,9 +54,12 @@ def get_bome_midi(presets):
 
 
 def get_incoming(t):
-    result = [ 'MID3<Incoming Action="MIDI">' ]
     if 'Incoming' in t:
         i = t['Incoming']
+
+        if 'Type' in i: return i['Type']
+
+        result = [ 'MID3<Incoming Action="MIDI">' ]
 
         result.append( '<Description>{}</Description>'.format(i['Desc']) )
 
@@ -74,9 +87,12 @@ def get_incoming(t):
 
 
 def get_outgoing(t):
-    result = [ 'MID3<Outgoing Action="MIDI">' ]
     if 'Outgoing' in t:
         i = t['Outgoing']
+
+        if 'Type' in i: return i['Type']
+
+        result = [ 'MID3<Outgoing Action="MIDI">' ]
 
         result.append( '<Description>{}</Description>'.format(i['Desc']) )
 
