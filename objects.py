@@ -97,19 +97,41 @@ def n(note=-1, ch=1):
 
 
 # e()
-def e(name, ports=[], channel=0, note_type='note', note_in='', note_out=''):
+def e(name, ports=[], channel=0, note_type='note', note_in='', note_out='', default=''):
     result = {}
-    result['Name'] = name
+    result['Name']  = name
+    result['Ports'] = ports
+
     if note_in != '' and note_in != 'none':
         result['Incoming'] = {'Note': note_in,  'Channel': channel, 'Note Type': note_type}
+
     if note_out != '' and note_out != 'none':
         result['Outgoing'] = {'Note': note_out, 'Channel': channel, 'Note Type': note_type}
-    result['Ports'] = ports
+
+    if default != '' and default != 'none':
+        result['Default']  = default
+
     return result
 # e()
 
 
 # l()
-def l(name1, name2='', options=[]):
-    return { 'Link': (name1, name2), 'Options': options }
+def l(name1, name2='', options=[], thru='normal', delay=0):
+    if thru.lower() == 'x':
+        options1 = [ '// set {}'.format(name1), '{}=pp'.format(name1) ]
+        options2 = [ '// set {}'.format(name2), '{}=pp'.format(name2) ]
+        return [
+            { 'Link': (name1, name2), 'Options': options1 },
+            { 'Link': (name2, name1), 'Options': options2 },
+        ]
+    else:
+        if delay:
+            return { 'Link': (name1, name2), 'Options': options, 'Delay': delay}
+        else:
+            return { 'Link': (name1, name2), 'Options': options }
 # l()
+
+
+# X
+X = 'x'
+# X

@@ -108,7 +108,7 @@ def get_outgoing(t):
         result.append( '<Channel num="{}"/>'.format(i['Channel']-1) )
         result.append( '<Value1 num="{}"/>'.format(to_hex(i['Note'],2,True)) )
 
-        if i['Note Type'] == "note":
+        if i['Note Type'] == "note" or type(i['Note Value']) is int:
             result.append( '<Value2 num="{}"/>'.format(to_hex(127,2,True)) )
         elif i['Note Type'] == "cc":
             result.append( '<Value2 var="{}"/>'.format(i['Note Value']) )
