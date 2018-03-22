@@ -94,3 +94,22 @@ def n(note=-1, ch=1):
         result = get_new_note(ch=ch)
     return result
 # n()
+
+
+# e()
+def e(name, ports=[], channel=0, note_type='note', note_in='', note_out=''):
+    result = {}
+    result['Name'] = name
+    if note_in != '' and note_in != 'none':
+        result['Incoming'] = {'Note': note_in,  'Channel': channel, 'Note Type': note_type}
+    if note_out != '' and note_out != 'none':
+        result['Outgoing'] = {'Note': note_out, 'Channel': channel, 'Note Type': note_type}
+    result['Ports'] = ports
+    return result
+# e()
+
+
+# l()
+def l(name1, name2='', options=[]):
+    return { 'Link': (name1, name2), 'Options': options }
+# l()

@@ -35,6 +35,7 @@ def run():
     init_variables()
     body = get_body()
     create_globals(body)
+    create_notes(body)
 
     presets        = get_presets(body)
     bome_midi_file = get_bome_midi(presets)
@@ -101,6 +102,22 @@ def get_endpoint(body, endpoint_name):
         return (e for e in endpoints if e['Name'] == endpoint_name).next()
     except:
         raise Exception('Value \"{}\" does not exist!..'.format(endpoint_name))
+
+
+def create_notes(body):
+    endpoints = body['Endpoints']
+    for e in endpoints:
+        incoming = e['Incoming'] if 'Incoming' in e else None
+        outgoing = e['Outgoing'] if 'Outgoing' in e else None
+
+        if incoming != None and incoming['Note'] == 'auto':
+            incoming['Note'] = n(ch=incoming['Channel'])
+        if outgoing != None and outgoing['Note'] == 'auto':
+            outgoing['Note'] = n(ch=outgoing['Channel'])
+        if incoming != None and incoming['Note'] == 'outgoing':
+            incoming['Note'] = outgoing['Note']
+        if outgoing != None and outgoing['Note'] == 'incoming':
+            outgoing['Note'] = incoming['Note']
 
 
 def create_globals(body):
@@ -244,19 +261,17 @@ def get_translators(body):
         translator = {}
 
         a = get_endpoint(body, a)
-        a_note = a['Incoming']['Note'] if a['Incoming']['Note'] != 'auto' else n(a['Incoming']['Channel'])
-        a['Incoming']['Note'] = a_note
 
         incoming = {
             'Desc'      : a['Name'],
-            'Note'      : a_note,
+            'Note'      : a['Incoming']['Note'],
             'Channel'   : a['Incoming']['Channel'],
             'Note Type' : a['Incoming']['Note Type'],
             'Ports'     : a['Ports']
         }
 
         if a['Incoming']['Note Type'] == 'cc':
-            incoming['Note Value'] = get_global_var(a['Name'])
+            incoming['Note Value'] = 'pp'
 
         try_get_endpoint = False
         try:
@@ -266,18 +281,9 @@ def get_translators(body):
             pass
 
         if try_get_endpoint:
-            if b['Outgoing']['Note'] == 'auto':
-                b_note = n(b['Outgoing']['Channel'])
-            elif b['Outgoing']['Note'].lower() == 'incoming':
-                b_note = a_note
-            else:
-                b_note = b['Outgoing']['Note']
-            b['Outgoing']['Note'] = b_note
-#            b_note = b['Incoming']['Note'] if b['Incoming']['Note'] != 'auto' else n(b['Incoming']['Channel'])
-
             outgoing = {
                 'Desc'      : b['Name'],
-                'Note'      : b_note,
+                'Note'      : b['Outgoing']['Note'],
                 'Channel'   : b['Outgoing']['Channel'],
                 'Note Type' : b['Outgoing']['Note Type'],
                 'Ports'     : b['Ports']

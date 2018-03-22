@@ -49,7 +49,6 @@ def get_bome_midi(presets):
 
     result += footer
 
-#    print( repr(result) )
     return result
 
 
@@ -129,7 +128,6 @@ def get_options(t):
 
     for i, o in enumerate(t['Options']):
         if i == 0:
-            #print out line as-is
             result.append( o )
             continue
 
