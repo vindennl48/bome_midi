@@ -26,6 +26,8 @@ CUR_PRESET_ACTIVATED   = 'Pres080000'  # when current preset is activated
 CUR_PRESET_DEACTIVATED = 'Pres090000'  # when current preset is deactivated
 def ACTIVATE_ONLY_BY_NAME(name):            # activate preset by name
     return 'Pres02{}{}'.format(to_hex(len(name),4),name)
+def ACTIVATE_BY_TIMER(name):
+    return 'Tim0TimT{}{}'.format(to_hex(len(name),4),name)
 
 
 def get_bome_midi(presets):
@@ -76,7 +78,10 @@ def get_incoming(t):
 
         result.append( '<Channel num="{}"/>'.format(i['Channel']-1) )
         result.append( '<Value1 num="{}"/>'.format(to_hex(i['Note'],2,True)) )
-        result.append( '<Value2 num="{}" Type="Any"/>'.format(to_hex(0,2,True)) )
+        if i['Note Type'] == "note":
+            result.append( '<Value2 num="{}" Type="Any"/>'.format(to_hex(0,2,True)) )
+        elif i['Note Type'] == "cc":
+            result.append( '<Value2 var="pp" Type="SetVar"/>' )
         result.append( '</Simple>' )
 
         result.append( '</Incoming>' )
@@ -87,11 +92,24 @@ def get_incoming(t):
         return 'None'
 
 
+def get_timer(i):
+    return 'Tim0TimS{}{}0:0:{}'.format(
+        to_hex(len(i['Name']),4),
+        i['Name'],
+        i['Freq']
+    )
+
+
 def get_outgoing(t):
     if 'Outgoing' in t:
         i = t['Outgoing']
 
-        if 'Type' in i: return i['Type']
+        if 'Type' in i: 
+            if i['Type'] == 'timer':
+                return get_timer(i)
+            else:
+                return i['Type']
+
 
         result = [ 'MID3<Outgoing Action="MIDI">' ]
 
@@ -149,6 +167,12 @@ def get_options(t):
         elif '=' in o:
             result.append( get_equation(o) )
 
+        elif o == 'exit':
+            result.append('execute')
+
+        elif o == 'exit, skip':
+            result.append('noexecute')
+
         else:
             result.append( o )
 
@@ -173,6 +197,8 @@ def get_if(o):
 
     if o[3] == 'goto':
         rest = 'goto{}{}'.format( to_hex(len(o[4]),4), o[4])
+    else:
+        rest = o[3]
     return 'if({}){}'.format(o[1], rest)
 
 

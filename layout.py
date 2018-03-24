@@ -104,6 +104,7 @@ for i, hbo in enumerate(hb_options):
 
 # GLOBAL VARIABLES #############################################################
 global_variables = [
+    ('update_freq',  2000),
     ('current_song', 0),
     ('blind',        0),
     ('old_pete',     1),

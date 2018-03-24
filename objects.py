@@ -68,6 +68,14 @@ def get_global_var(device):
 # get global var given device name
 
 
+# get global var value
+def get_global_var_val(device):
+    global_vars = oc._get("global_vars")
+    g = (g for g in global_vars if g['Taken'] == device).next()
+    return g['Value']
+# get global var value
+
+
 # get new note
 def get_new_note(ch=1, note=-1): # device, note_type
     notes = oc._get("notes")

@@ -1,9 +1,9 @@
 from ObjectContainer import ObjectContainer as oc
-from objects import init_variables, get_new_global_var, n, get_global_var
+from objects import init_variables, get_new_global_var, n, get_global_var, get_global_var_val
 from layout import endpoints, links, global_variables, footer
 from nice_json import json_print_pretty
 from bome_midi_convert import get_bome_midi, to_hex
-from bome_midi_convert import CUR_PRESET_ACTIVATED, PROJECT_FILE_OPENED, ACTIVATE_ONLY_BY_NAME
+from bome_midi_convert import CUR_PRESET_ACTIVATED, PROJECT_FILE_OPENED, ACTIVATE_ONLY_BY_NAME, ACTIVATE_BY_TIMER
 from GetArgs import getargs
 
 
@@ -124,10 +124,21 @@ def create_notes(body):
 
 def create_globals(body):
     # create default globals for internal settings
-    freq = 2
+    freq = 5000
     for g in body['Globals']:
         if g[0] == 'update_freq': freq = g[1]
-    get_new_global_var('update_freq', freq) # name/freq in seconds
+
+    # calculating the update freq based on how many
+    #  variables need updating
+    outputs = []
+    for e in body['Endpoints']:
+        if 'Outgoing' in e and e['Outgoing']['Note Type'] == 'cc':
+            outputs.append(e)
+    margin   = int(float(freq)/float(len(outputs)))
+
+    get_new_global_var('old_update_freq', margin*len(outputs))
+    get_new_global_var('update_freq', margin)   # name/freq in ms
+    get_new_global_var('update_pos', 0)         # var pos currently updating
 
     # create globals for all cc values
     for value in body['Endpoints']:
@@ -149,8 +160,9 @@ def create_globals(body):
 
 def get_presets(body):
     presets = [ create_preset('init') ]
-    presets.append( create_preset('links', body) ) 
-    presets.append( create_preset('setup', body) ) 
+    presets.append( create_preset('links', body) )
+    presets.append( create_preset('setup', body) )
+    presets.append( create_preset('update', body) )
     return presets
 
 
@@ -162,7 +174,7 @@ def create_preset(options, body=None):
             'Name'   : 'Initialize',
             'Active' : 1,
             'Psi'    : 0,     # PresetSwitchIgnore
-            'Translators': get_global_start_values()
+            'Translators': get_global_start_values() + get_update_timer()
         }
     elif options == 'links':
         # create linking preset
@@ -179,8 +191,87 @@ def create_preset(options, body=None):
             'Psi'    : 0,
             'Translators': get_setup(body)
         }
+    elif options == 'update':
+        result = {
+            'Name'   : 'Update',
+            'Active' : 1,
+            'Psi'    : 0,
+            'Translators': get_update(body)
+        }
 
     return result
+
+
+def get_update(body):
+    result  = []
+    outputs = []
+    for e in body['Endpoints']:
+        if 'Outgoing' in e and e['Outgoing']['Note Type'] == 'cc':
+            outputs.append(e)
+
+    # get ready for options section
+    margin          = get_global_var_val('update_freq')
+    mymargin        = 0
+    old_update_freq = get_global_var_val('old_update_freq')
+
+    for o in reversed(outputs):
+        incoming = {
+            'Desc'      : o['Name'],
+            'Type'      : ACTIVATE_BY_TIMER('t_update')
+        }
+        outgoing = {
+            'Desc'      : o['Name'],
+            'Note'      : o['Outgoing']['Note'],
+            'Channel'   : o['Outgoing']['Channel'],
+            'Note Type' : o['Outgoing']['Note Type'],
+            'Note Value': get_global_var(o['Name']),
+            'Ports'     : o['Ports']
+        }
+        options = [
+            'if {}=={} then goto NEXT'.format(
+                get_global_var('update_pos'),
+                mymargin
+            ),
+            'exit, skip',
+            'label NEXT',
+            '{}={}+{}'.format(
+                get_global_var('update_pos'),
+                get_global_var('update_pos'),
+                margin
+            ),
+            'if {}>={} then {}=0'.format(
+                get_global_var('update_pos'),
+                old_update_freq,
+                get_global_var('update_pos')
+            )
+        ]
+        translator = {
+            'Name'     : 'Update {}'.format(o['Name']),
+            'Incoming' : incoming,
+            'Outgoing' : outgoing,
+            'Options'  : create_options_header(len(options),options,active=1)
+        }
+        result.append(translator)
+        mymargin += margin
+
+    new_result = []
+    for i in reversed(result):
+        new_result.append(i)
+    return new_result
+
+
+def get_update_timer():
+    translator = {
+        'Name'     : 'Start t_update',
+        'Incoming' : { 'Type':PROJECT_FILE_OPENED },
+        'Outgoing' : {
+            'Type' : 'timer',
+            'Name' : 't_update',
+            'Freq' : get_global_var('update_freq')
+        },
+        'Options'  : create_options_header(0,[])
+    }
+    return [translator]
 
 
 def get_setup(body):
@@ -336,16 +427,19 @@ def get_default_rules(a,b):
             result.append( '// toggle {} on and off'.format(b['Desc']) )
             result.append( 'if {}==0 then goto NEXT'.format(b_global) )
             result.append( '{}=0'.format(b_global) )
-            result.append( 'goto END'.format(b_global) )
-            result.append( 'label NEXT'.format(b_global) )
+            result.append( 'goto END' )
+            result.append( 'label NEXT' )
             result.append( '{}=127'.format(b_global) )
-            result.append( 'label END'.format(b_global) )
+            result.append( 'label END' )
     return result
 
 
 def create_options_header(link, options, active=1, stop=0, out=0):
     if type(link) is not dict:
-        result = [ 'Actv01Stop00OutO00StMa{}'.format(to_hex(link, 8)) ]
+        if len(options) == 0:
+            result = [ 'Actv01Stop00OutO00' ]
+        else:
+            result = [ 'Actv01Stop00OutO00StMa{}'.format(to_hex(link, 8)) ]
     else:
         if 'Delay' in link:
             delay = 'Dlay{}:Millis'.format(link['Delay'])
