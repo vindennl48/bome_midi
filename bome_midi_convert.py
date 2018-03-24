@@ -187,7 +187,7 @@ def get_goto(o):
 
 
 def to_hex(num, padding=0, keep_x=False):
-    result = str(hex(num))[2:]
+    result = str(hex(num))[2:].upper()
     if padding > 0:
         itr = padding - len(result)
         if itr > 0:
@@ -195,5 +195,4 @@ def to_hex(num, padding=0, keep_x=False):
                 result = '0' + result
     if keep_x: result = '0x{}'.format(result)
     return result
-
 

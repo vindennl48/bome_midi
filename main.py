@@ -354,9 +354,14 @@ def create_options_header(link, options, active=1, stop=0, out=0):
 
         num_rules = len(options)
 
-        result = [ 'Actv{:02d}Stop{:02d}OutO{:02d}{}StMa{}'.format(
-            active, stop, out, delay, to_hex(num_rules, 8)
-        ) ]
+        if num_rules != 0:
+            result = [ 'Actv{:02d}Stop{:02d}OutO{:02d}{}StMa{}'.format(
+                active, stop, out, delay, to_hex(num_rules, 8)
+            ) ]
+        else:
+            result = [ 'Actv{:02d}Stop{:02d}OutO{:02d}{}'.format(
+                active, stop, out, delay
+            ) ]
 
     result += options
     return result
