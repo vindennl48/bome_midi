@@ -10,16 +10,18 @@ from GetArgs import getargs
 '''
 Summary:
  - def run()
- - def test(generated_file)
+ - def test(generated_file, file_to_test)
  - def get_body()
  - def get_endpoint(body, endpoint_name)
+ - def create_notes(body)
  - def create_globals(body)
  - def get_presets(body)
  - def create_preset(options, body=None)
+ - def get_setup(body)
  - def get_global_start_values()
  - def get_translators(body)
  - def get_default_rules(a,b)
- - def create_options_header(link, options)
+ - def create_options_header(link, options, active=1, stop=0, out=0)
 '''
 
 

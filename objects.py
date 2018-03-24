@@ -9,6 +9,8 @@ Summary:
  - def get_global_var(device)
  - def get_new_note(ch=1, note=-1) # device, note_type
  - def n(note=-1, ch=1)
+ - def e(name, ports=[], channel=0, note_type='note', note_in='', note_out='', default='')
+ - def l(name1, name2='', options=[], thru='normal', delay=0)
 '''
 
 

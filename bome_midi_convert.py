@@ -4,10 +4,12 @@ from ObjectContainer import ObjectContainer as oc
 
 '''
 Summary:
+ - def ACTIVATE_ONLY_BY_NAME(name)            # activate preset by name
  - def get_bome_midi(presets)
  - def get_incoming(t)
  - def get_outgoing(t)
  - def get_options(t)
+ - def get_equation(o)
  - def get_comment(o)
  - def get_if(o)
  - def get_label(o)
