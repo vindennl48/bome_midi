@@ -180,12 +180,16 @@ def get_options(t):
 
 
 import re
-def get_equation(o):
+def swap_vars(o):   
     global_vars = oc.items['global_vars']
     for gv in global_vars:
         if type(gv['Taken']) is str and gv['Taken'] in o:
-            o = re.sub(gv['Taken'],gv['Var'],o)
+            o = re.sub('{}(?![_,a-z,A-Z])'.format(gv['Taken']),gv['Var'],o)
     return o
+
+
+def get_equation(o):
+    return swap_vars(o)
 
 
 def get_comment(o):
@@ -193,6 +197,7 @@ def get_comment(o):
 
 
 def get_if(o):
+    o = swap_vars(o)
     o = o.split()
 
     if o[3] == 'goto':

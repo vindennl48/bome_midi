@@ -36,13 +36,14 @@ def init_variables():
     sl = "a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9".split()
     for c in fl:
         for c2 in sl:
-            gvars.append(
-                {
-                    "Var" : "{}{}".format(c,c2),
-                    "Taken": False, # or the name of the device using this variable
-                    "Value": 0
-                }
-            )
+            if c != 'i' and c2 != 'f':
+                gvars.append(
+                    {
+                        "Var" : "{}{}".format(c,c2),
+                        "Taken": False, # or the name of the device using this variable
+                        "Value": 0
+                    }
+                )
     oc._add("global_vars", gvars)
     oc._add("notes", notes)
 # setup global vars
