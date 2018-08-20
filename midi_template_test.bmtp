@@ -1,0 +1,1434 @@
+; ------- Bome MIDI Translator: Signed Project File
+; ------- You can modify this file as you like, but that will invalidate
+; ------- the signature so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=Initialize
+Active=1
+PresetSwitchIgnore=0
+Name0=Global Variables
+Incoming0=EnDi02
+Outgoing0=None
+Options0=Actv01Stop00OutO00StMa000000F2label0018__cmt>// old_update_freqga=1960label0014__cmt>// update_freqgb=20label0013__cmt>// update_posgc=0label0012__cmt>// fx_lowcutgd=0label0011__cmt>// fx_hicutge=127label0010__cmt>// fx_distgg=0label0011__cmt>// fx_delaygh=0label0018__cmt>// fx_s_delay_beatgi=105label0018__cmt>// fx_s_delay_fdbkgj=86label001A__cmt>// fx_s_delay_drywetgk=64label0012__cmt>// fx_reverbgl=0label0013__cmt>// fx_octavergm=0label000F__cmt>// fx_ampgn=64label0012__cmt>// fx_volumego=0label000F__cmt>// fx_expgp=0label0015__cmt>// daw_talkbackgq=127label0015__cmt>// daw_bass_outgr=127label0016__cmt>// daw_drums_outgs=127label0018__cmt>// daw_level_jamesgt=78label0018__cmt>// daw_level_jessegu=78label001B__cmt>// daw_level_in_mitchgv=36label001C__cmt>// daw_level_out_mitchgw=56label0017__cmt>// hb_mitch_mitchgx=89label0017__cmt>// hb_mitch_jamesgy=89label0017__cmt>// hb_mitch_jessegz=89label0017__cmt>// hb_mitch_drumsg0=89label0015__cmt>// hb_mitch_volg1=89label0017__cmt>// hb_mitch_clickg2=89label0017__cmt>// hb_mitch_tbvolg3=89label0016__cmt>// hb_mitch_solog4=0label0016__cmt>// hb_mitch_tbiog5=127label0015__cmt>// hb_mitch_recg6=0label001B__cmt>// hb_mitch_james_lrcg7=0label001B__cmt>// hb_mitch_jesse_lrcg8=127label001B__cmt>// hb_mitch_mitch_lrcg9=64label0014__cmt>// hb_bass_outha=127label0015__cmt>// hb_drums_outhb=127label0017__cmt>// hb_level_jameshc=78label0017__cmt>// hb_level_jessehd=78label001A__cmt>// hb_level_in_mitchhe=36label001B__cmt>// hb_level_out_mitchhg=56label000F__cmt>// hb_amphh=64label0018__cmt>// hb_s_delay_beathi=105label0018__cmt>// hb_s_delay_fdbkhj=86label001A__cmt>// hb_s_delay_drywethk=64label0017__cmt>// hb_james_mitchhl=89label0017__cmt>// hb_james_jameshm=89label0017__cmt>// hb_james_jessehn=89label0017__cmt>// hb_james_drumsho=89label0015__cmt>// hb_james_volhp=89label0017__cmt>// hb_james_clickhq=89label0017__cmt>// hb_james_tbvolhr=89label0016__cmt>// hb_james_solohs=0label0016__cmt>// hb_james_tbioht=127label0015__cmt>// hb_james_rechu=0label001B__cmt>// hb_james_james_lrchv=0label001B__cmt>// hb_james_jesse_lrchw=127label001B__cmt>// hb_james_mitch_lrchx=64label0017__cmt>// hb_jesse_mitchhy=89label0017__cmt>// hb_jesse_jameshz=89label0017__cmt>// hb_jesse_jesseh0=89label0017__cmt>// hb_jesse_drumsh1=89label0015__cmt>// hb_jesse_volh2=89label0017__cmt>// hb_jesse_clickh3=89label0017__cmt>// hb_jesse_tbvolh4=89label0016__cmt>// hb_jesse_soloh5=0label0016__cmt>// hb_jesse_tbioh6=127label0015__cmt>// hb_jesse_rech7=0label001B__cmt>// hb_jesse_james_lrch8=0label001B__cmt>// hb_jesse_jesse_lrch9=127label001B__cmt>// hb_jesse_mitch_lrcja=64label0018__cmt>// daw_mitch_mitchjb=89label0018__cmt>// daw_mitch_jamesjc=89label0018__cmt>// daw_mitch_jessejd=89label0018__cmt>// daw_mitch_drumsje=89label0016__cmt>// daw_mitch_voljg=89label0018__cmt>// daw_mitch_clickjh=89label0018__cmt>// daw_mitch_tbvolji=89label001C__cmt>// daw_mitch_james_lrcjj=0label001C__cmt>// daw_mitch_jesse_lrcjk=127label001C__cmt>// daw_mitch_mitch_lrcjl=64label0018__cmt>// daw_james_mitchjm=89label0018__cmt>// daw_james_jamesjn=89label0018__cmt>// daw_james_jessejo=89label0018__cmt>// daw_james_drumsjp=89label0016__cmt>// daw_james_voljq=89label0018__cmt>// daw_james_clickjr=89label0018__cmt>// daw_james_tbvoljs=89label001C__cmt>// daw_james_james_lrcjt=0label001C__cmt>// daw_james_jesse_lrcju=127label001C__cmt>// daw_james_mitch_lrcjv=64label0018__cmt>// daw_jesse_mitchjw=89label0018__cmt>// daw_jesse_jamesjx=89label0018__cmt>// daw_jesse_jessejy=89label0018__cmt>// daw_jesse_drumsjz=89label0016__cmt>// daw_jesse_volj0=89label0018__cmt>// daw_jesse_clickj1=89label0018__cmt>// daw_jesse_tbvolj2=89label001C__cmt>// daw_jesse_james_lrcj3=0label001C__cmt>// daw_jesse_jesse_lrcj4=127label001C__cmt>// daw_jesse_mitch_lrcj5=64label0014__cmt>// update_freqj6=2000label0013__cmt>// is_playingj7=0label0015__cmt>// current_songj8=0label001F__cmt>// mitch_solo_mitch_jamesj9=0label001F__cmt>// mitch_solo_mitch_jesseka=0label001F__cmt>// mitch_solo_james_mitchkb=0label001F__cmt>// mitch_solo_jesse_mitchkc=0label001F__cmt>// james_solo_james_mitchkd=0label001F__cmt>// james_solo_james_jesseke=0label001F__cmt>// james_solo_mitch_jameskg=0label001F__cmt>// james_solo_jesse_jameskh=0label001F__cmt>// jesse_solo_jesse_mitchki=0label001F__cmt>// jesse_solo_jesse_jameskj=0label001F__cmt>// jesse_solo_mitch_jessekk=0label001F__cmt>// jesse_solo_james_jessekl=0label000E__cmt>// blindkm=0label0011__cmt>// old_petekn=1label000D__cmt>// sonoko=2label0012__cmt>// petrichorkp=3label000E__cmt>// spacekq=4
+Name1=Start t_update
+Incoming1=EnDi02
+Outgoing1=Tim0TimS0008t_update0:0:gb
+Options1=Actv01Stop00OutO00
+
+[Preset.1]
+Name=Links
+Active=1
+PresetSwitchIgnore=0
+Name0=fcb1010_btn_1 -> blind
+Incoming0=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_1</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x01"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing0=None
+Options0=Actv01Stop00OutO00StMa00000001j8=km
+Name1=fcb1010_btn_2 -> old_pete
+Incoming1=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_2</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x02"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing1=None
+Options1=Actv01Stop00OutO00StMa00000001j8=kn
+Name2=fcb1010_btn_3 -> sono
+Incoming2=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_3</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x03"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing2=None
+Options2=Actv01Stop00OutO00StMa00000001j8=ko
+Name3=fcb1010_btn_4 -> petrichor
+Incoming3=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_4</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x04"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing3=None
+Options3=Actv01Stop00OutO00StMa00000001j8=kp
+Name4=fcb1010_btn_5 -> space
+Incoming4=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_5</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x05"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing4=None
+Options4=Actv01Stop00OutO00StMa00000001j8=kq
+Name5=fcb1010_btn_6 -> daw_talkback
+Incoming5=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_6</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x06"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing5=MID3<Outgoing Action="MIDI"><Description>daw_talkback</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x16"/><Value2 var="gq"/></Simple></Outgoing>
+Options5=Actv01Stop00OutO00StMa00000007label0027__cmt>// toggle daw_talkback on and offif(gq==0)goto0004NEXTgq=0goto0003ENDlabel0004NEXTgq=127label0003END
+Name6=fcb1010_btn_10 -> daw_stop_playhead
+Incoming6=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_10</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x0A"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing6=MID3<Outgoing Action="MIDI"><Description>daw_stop_playhead</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x0E"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options6=Actv01Stop00OutO00StMa00000004g6=0hu=0h7=0j7=0
+Name7=fcb1010_btn_10 -> daw_stop_clips
+Incoming7=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_10</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x0A"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing7=MID3<Outgoing Action="MIDI"><Description>daw_stop_clips</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x0F"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options7=Actv01Stop00OutO00Dlay50:Millis
+Name8=fcb1010_btn_10 -> daw_advance_playhead
+Incoming8=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_10</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x0A"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing8=MID3<Outgoing Action="MIDI"><Description>daw_advance_playhead</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x10"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options8=Actv01Stop00OutO00Dlay100:Millis
+Name9=fcb1010_btn_11 -> fx_lowcut
+Incoming9=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_11</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x0B"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing9=MID3<Outgoing Action="MIDI"><Description>fx_lowcut</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x02"/><Value2 var="gd"/></Simple></Outgoing>
+Options9=Actv01Stop00OutO00StMa00000007label0024__cmt>// toggle fx_lowcut on and offif(gd==0)goto0004NEXTgd=0goto0003ENDlabel0004NEXTgd=127label0003END
+Name10=fcb1010_btn_12 -> fx_hicut
+Incoming10=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_12</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x0C"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing10=MID3<Outgoing Action="MIDI"><Description>fx_hicut</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x03"/><Value2 var="ge"/></Simple></Outgoing>
+Options10=Actv01Stop00OutO00StMa00000007label0023__cmt>// toggle fx_hicut on and offif(ge==0)goto0004NEXTge=0goto0003ENDlabel0004NEXTge=127label0003END
+Name11=fcb1010_btn_13 -> fx_dist
+Incoming11=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_13</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x0D"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing11=MID3<Outgoing Action="MIDI"><Description>fx_dist</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x04"/><Value2 var="gg"/></Simple></Outgoing>
+Options11=Actv01Stop00OutO00StMa00000007label0022__cmt>// toggle fx_dist on and offif(gg==0)goto0004NEXTgg=0goto0003ENDlabel0004NEXTgg=127label0003END
+Name12=fcb1010_btn_14 -> fx_delay
+Incoming12=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_14</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x0E"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing12=MID3<Outgoing Action="MIDI"><Description>fx_delay</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x05"/><Value2 var="gh"/></Simple></Outgoing>
+Options12=Actv01Stop00OutO00StMa00000007label0023__cmt>// toggle fx_delay on and offif(gh==0)goto0004NEXTgh=0goto0003ENDlabel0004NEXTgh=127label0003END
+Name13=fcb1010_btn_15 -> fx_reverb
+Incoming13=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_15</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x0F"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing13=MID3<Outgoing Action="MIDI"><Description>fx_reverb</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x09"/><Value2 var="gl"/></Simple></Outgoing>
+Options13=Actv01Stop00OutO00StMa00000007label0024__cmt>// toggle fx_reverb on and offif(gl==0)goto0004NEXTgl=0goto0003ENDlabel0004NEXTgl=127label0003END
+Name14=fcb1010_btn_16 -> daw_talkback
+Incoming14=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_16</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x10"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing14=MID3<Outgoing Action="MIDI"><Description>daw_talkback</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x16"/><Value2 var="gq"/></Simple></Outgoing>
+Options14=Actv01Stop00OutO00StMa00000007label0027__cmt>// toggle daw_talkback on and offif(gq==0)goto0004NEXTgq=0goto0003ENDlabel0004NEXTgq=127label0003END
+Name15=fcb1010_btn_17 -> 
+Incoming15=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_17</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x11"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing15=None
+Options15=Actv01Stop00OutO00StMa00000001j7=1
+Name16=fcb1010_btn_18 -> 
+Incoming16=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_18</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x12"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing16=None
+Options16=Actv01Stop00OutO00StMa00000001j7=1
+Name17=fcb1010_btn_19 -> 
+Incoming17=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_19</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x13"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing17=None
+Options17=Actv01Stop00OutO00StMa00000001j7=1
+Name18=fcb1010_btn_20 -> daw_stop_playhead
+Incoming18=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_20</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x14"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing18=MID3<Outgoing Action="MIDI"><Description>daw_stop_playhead</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x0E"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options18=Actv01Stop00OutO00StMa00000004g6=0hu=0h7=0j7=0
+Name19=fcb1010_btn_20 -> daw_stop_clips
+Incoming19=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_20</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x14"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing19=MID3<Outgoing Action="MIDI"><Description>daw_stop_clips</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x0F"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options19=Actv01Stop00OutO00Dlay50:Millis
+Name20=fcb1010_btn_20 -> daw_advance_playhead
+Incoming20=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_20</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x14"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing20=MID3<Outgoing Action="MIDI"><Description>daw_advance_playhead</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x10"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options20=Actv01Stop00OutO00Dlay100:Millis
+Name21=fcb1010_exp_1 -> fx_volume
+Incoming21=MID3<Incoming Action="MIDI"><Description>fcb1010_exp_1</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x7E"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing21=MID3<Outgoing Action="MIDI"><Description>fx_volume</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x0C"/><Value2 var="go"/></Simple></Outgoing>
+Options21=Actv01Stop00OutO00StMa00000002label0016__cmt>// set fx_volumego=pp
+Name22=fcb1010_exp_2 -> fx_exp
+Incoming22=MID3<Incoming Action="MIDI"><Description>fcb1010_exp_2</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x7F"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing22=MID3<Outgoing Action="MIDI"><Description>fx_exp</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x0D"/><Value2 var="gp"/></Simple></Outgoing>
+Options22=Actv01Stop00OutO00StMa00000002label0013__cmt>// set fx_expgp=pp
+Name23=hb_mitch_mitch -> daw_mitch_mitch
+Incoming23=MID3<Incoming Action="MIDI"><Description>hb_mitch_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x01"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing23=MID3<Outgoing Action="MIDI"><Description>daw_mitch_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x01"/><Value2 var="jb"/></Simple></Outgoing>
+Options23=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_mitch_mitchjb=pplabel001B__cmt>// set hb_mitch_mitchgx=pp
+Name24=daw_mitch_mitch -> hb_mitch_mitch
+Incoming24=MID3<Incoming Action="MIDI"><Description>daw_mitch_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x01"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing24=MID3<Outgoing Action="MIDI"><Description>hb_mitch_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x01"/><Value2 var="gx"/></Simple></Outgoing>
+Options24=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_mitch_mitchgx=pplabel001C__cmt>// set daw_mitch_mitchjb=pp
+Name25=hb_mitch_james -> daw_mitch_james
+Incoming25=MID3<Incoming Action="MIDI"><Description>hb_mitch_james</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x02"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing25=MID3<Outgoing Action="MIDI"><Description>daw_mitch_james</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x02"/><Value2 var="jc"/></Simple></Outgoing>
+Options25=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_mitch_jamesjc=pplabel001B__cmt>// set hb_mitch_jamesgy=pp
+Name26=daw_mitch_james -> hb_mitch_james
+Incoming26=MID3<Incoming Action="MIDI"><Description>daw_mitch_james</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x02"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing26=MID3<Outgoing Action="MIDI"><Description>hb_mitch_james</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x02"/><Value2 var="gy"/></Simple></Outgoing>
+Options26=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_mitch_jamesgy=pplabel001C__cmt>// set daw_mitch_jamesjc=pp
+Name27=hb_mitch_jesse -> daw_mitch_jesse
+Incoming27=MID3<Incoming Action="MIDI"><Description>hb_mitch_jesse</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x03"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing27=MID3<Outgoing Action="MIDI"><Description>daw_mitch_jesse</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x03"/><Value2 var="jd"/></Simple></Outgoing>
+Options27=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_mitch_jessejd=pplabel001B__cmt>// set hb_mitch_jessegz=pp
+Name28=daw_mitch_jesse -> hb_mitch_jesse
+Incoming28=MID3<Incoming Action="MIDI"><Description>daw_mitch_jesse</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x03"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing28=MID3<Outgoing Action="MIDI"><Description>hb_mitch_jesse</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x03"/><Value2 var="gz"/></Simple></Outgoing>
+Options28=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_mitch_jessegz=pplabel001C__cmt>// set daw_mitch_jessejd=pp
+Name29=hb_mitch_drums -> daw_mitch_drums
+Incoming29=MID3<Incoming Action="MIDI"><Description>hb_mitch_drums</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x04"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing29=MID3<Outgoing Action="MIDI"><Description>daw_mitch_drums</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x04"/><Value2 var="je"/></Simple></Outgoing>
+Options29=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_mitch_drumsje=pplabel001B__cmt>// set hb_mitch_drumsg0=pp
+Name30=daw_mitch_drums -> hb_mitch_drums
+Incoming30=MID3<Incoming Action="MIDI"><Description>daw_mitch_drums</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x04"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing30=MID3<Outgoing Action="MIDI"><Description>hb_mitch_drums</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x04"/><Value2 var="g0"/></Simple></Outgoing>
+Options30=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_mitch_drumsg0=pplabel001C__cmt>// set daw_mitch_drumsje=pp
+Name31=hb_mitch_vol -> daw_mitch_vol
+Incoming31=MID3<Incoming Action="MIDI"><Description>hb_mitch_vol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x05"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing31=MID3<Outgoing Action="MIDI"><Description>daw_mitch_vol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x05"/><Value2 var="jg"/></Simple></Outgoing>
+Options31=Actv01Stop00OutO00StMa00000004label001A__cmt>// set daw_mitch_voljg=pplabel0019__cmt>// set hb_mitch_volg1=pp
+Name32=daw_mitch_vol -> hb_mitch_vol
+Incoming32=MID3<Incoming Action="MIDI"><Description>daw_mitch_vol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x05"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing32=MID3<Outgoing Action="MIDI"><Description>hb_mitch_vol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x05"/><Value2 var="g1"/></Simple></Outgoing>
+Options32=Actv01Stop00OutO00StMa00000004label0019__cmt>// set hb_mitch_volg1=pplabel001A__cmt>// set daw_mitch_voljg=pp
+Name33=hb_mitch_click -> daw_mitch_click
+Incoming33=MID3<Incoming Action="MIDI"><Description>hb_mitch_click</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x06"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing33=MID3<Outgoing Action="MIDI"><Description>daw_mitch_click</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x06"/><Value2 var="jh"/></Simple></Outgoing>
+Options33=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_mitch_clickjh=pplabel001B__cmt>// set hb_mitch_clickg2=pp
+Name34=daw_mitch_click -> hb_mitch_click
+Incoming34=MID3<Incoming Action="MIDI"><Description>daw_mitch_click</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x06"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing34=MID3<Outgoing Action="MIDI"><Description>hb_mitch_click</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x06"/><Value2 var="g2"/></Simple></Outgoing>
+Options34=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_mitch_clickg2=pplabel001C__cmt>// set daw_mitch_clickjh=pp
+Name35=hb_mitch_tbvol -> daw_mitch_tbvol
+Incoming35=MID3<Incoming Action="MIDI"><Description>hb_mitch_tbvol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x07"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing35=MID3<Outgoing Action="MIDI"><Description>daw_mitch_tbvol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x07"/><Value2 var="ji"/></Simple></Outgoing>
+Options35=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_mitch_tbvolji=pplabel001B__cmt>// set hb_mitch_tbvolg3=pp
+Name36=daw_mitch_tbvol -> hb_mitch_tbvol
+Incoming36=MID3<Incoming Action="MIDI"><Description>daw_mitch_tbvol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x07"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing36=MID3<Outgoing Action="MIDI"><Description>hb_mitch_tbvol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x07"/><Value2 var="g3"/></Simple></Outgoing>
+Options36=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_mitch_tbvolg3=pplabel001C__cmt>// set daw_mitch_tbvolji=pp
+Name37=hb_mitch_tbio -> daw_talkback
+Incoming37=MID3<Incoming Action="MIDI"><Description>hb_mitch_tbio</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x09"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing37=MID3<Outgoing Action="MIDI"><Description>daw_talkback</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x16"/><Value2 var="gq"/></Simple></Outgoing>
+Options37=Actv01Stop00OutO00StMa00000004label0019__cmt>// set daw_talkbackgq=pplabel001A__cmt>// set hb_mitch_tbiog5=pp
+Name38=daw_talkback -> hb_mitch_tbio
+Incoming38=MID3<Incoming Action="MIDI"><Description>daw_talkback</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x16"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing38=MID3<Outgoing Action="MIDI"><Description>hb_mitch_tbio</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x09"/><Value2 var="g5"/></Simple></Outgoing>
+Options38=Actv01Stop00OutO00StMa00000004label001A__cmt>// set hb_mitch_tbiog5=pplabel0019__cmt>// set daw_talkbackgq=pp
+Name39=hb_mitch_james_lrc -> daw_mitch_james_lrc
+Incoming39=MID3<Incoming Action="MIDI"><Description>hb_mitch_james_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0B"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing39=MID3<Outgoing Action="MIDI"><Description>daw_mitch_james_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x08"/><Value2 var="jj"/></Simple></Outgoing>
+Options39=Actv01Stop00OutO00StMa00000004label0020__cmt>// set daw_mitch_james_lrcjj=pplabel001F__cmt>// set hb_mitch_james_lrcg7=pp
+Name40=daw_mitch_james_lrc -> hb_mitch_james_lrc
+Incoming40=MID3<Incoming Action="MIDI"><Description>daw_mitch_james_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x08"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing40=MID3<Outgoing Action="MIDI"><Description>hb_mitch_james_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0B"/><Value2 var="g7"/></Simple></Outgoing>
+Options40=Actv01Stop00OutO00StMa00000004label001F__cmt>// set hb_mitch_james_lrcg7=pplabel0020__cmt>// set daw_mitch_james_lrcjj=pp
+Name41=hb_mitch_jesse_lrc -> daw_mitch_jesse_lrc
+Incoming41=MID3<Incoming Action="MIDI"><Description>hb_mitch_jesse_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0C"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing41=MID3<Outgoing Action="MIDI"><Description>daw_mitch_jesse_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x09"/><Value2 var="jk"/></Simple></Outgoing>
+Options41=Actv01Stop00OutO00StMa00000004label0020__cmt>// set daw_mitch_jesse_lrcjk=pplabel001F__cmt>// set hb_mitch_jesse_lrcg8=pp
+Name42=daw_mitch_jesse_lrc -> hb_mitch_jesse_lrc
+Incoming42=MID3<Incoming Action="MIDI"><Description>daw_mitch_jesse_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x09"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing42=MID3<Outgoing Action="MIDI"><Description>hb_mitch_jesse_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0C"/><Value2 var="g8"/></Simple></Outgoing>
+Options42=Actv01Stop00OutO00StMa00000004label001F__cmt>// set hb_mitch_jesse_lrcg8=pplabel0020__cmt>// set daw_mitch_jesse_lrcjk=pp
+Name43=hb_mitch_mitch_lrc -> daw_mitch_mitch_lrc
+Incoming43=MID3<Incoming Action="MIDI"><Description>hb_mitch_mitch_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0D"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing43=MID3<Outgoing Action="MIDI"><Description>daw_mitch_mitch_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0A"/><Value2 var="jl"/></Simple></Outgoing>
+Options43=Actv01Stop00OutO00StMa00000004label0020__cmt>// set daw_mitch_mitch_lrcjl=pplabel001F__cmt>// set hb_mitch_mitch_lrcg9=pp
+Name44=daw_mitch_mitch_lrc -> hb_mitch_mitch_lrc
+Incoming44=MID3<Incoming Action="MIDI"><Description>daw_mitch_mitch_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0A"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing44=MID3<Outgoing Action="MIDI"><Description>hb_mitch_mitch_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0D"/><Value2 var="g9"/></Simple></Outgoing>
+Options44=Actv01Stop00OutO00StMa00000004label001F__cmt>// set hb_mitch_mitch_lrcg9=pplabel0020__cmt>// set daw_mitch_mitch_lrcjl=pp
+Name45=hb_bass_out -> daw_bass_out
+Incoming45=MID3<Incoming Action="MIDI"><Description>hb_bass_out</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0E"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing45=MID3<Outgoing Action="MIDI"><Description>daw_bass_out</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x17"/><Value2 var="gr"/></Simple></Outgoing>
+Options45=Actv01Stop00OutO00StMa00000004label0019__cmt>// set daw_bass_outgr=pplabel0018__cmt>// set hb_bass_outha=pp
+Name46=daw_bass_out -> hb_bass_out
+Incoming46=MID3<Incoming Action="MIDI"><Description>daw_bass_out</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x17"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing46=MID3<Outgoing Action="MIDI"><Description>hb_bass_out</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0E"/><Value2 var="ha"/></Simple></Outgoing>
+Options46=Actv01Stop00OutO00StMa00000004label0018__cmt>// set hb_bass_outha=pplabel0019__cmt>// set daw_bass_outgr=pp
+Name47=hb_drums_out -> daw_drums_out
+Incoming47=MID3<Incoming Action="MIDI"><Description>hb_drums_out</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0F"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing47=MID3<Outgoing Action="MIDI"><Description>daw_drums_out</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x18"/><Value2 var="gs"/></Simple></Outgoing>
+Options47=Actv01Stop00OutO00StMa00000004label001A__cmt>// set daw_drums_outgs=pplabel0019__cmt>// set hb_drums_outhb=pp
+Name48=daw_drums_out -> hb_drums_out
+Incoming48=MID3<Incoming Action="MIDI"><Description>daw_drums_out</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x18"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing48=MID3<Outgoing Action="MIDI"><Description>hb_drums_out</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0F"/><Value2 var="hb"/></Simple></Outgoing>
+Options48=Actv01Stop00OutO00StMa00000004label0019__cmt>// set hb_drums_outhb=pplabel001A__cmt>// set daw_drums_outgs=pp
+Name49=hb_level_james -> daw_level_james
+Incoming49=MID3<Incoming Action="MIDI"><Description>hb_level_james</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x10"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing49=MID3<Outgoing Action="MIDI"><Description>daw_level_james</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x19"/><Value2 var="gt"/></Simple></Outgoing>
+Options49=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_level_jamesgt=pplabel001B__cmt>// set hb_level_jameshc=pp
+Name50=daw_level_james -> hb_level_james
+Incoming50=MID3<Incoming Action="MIDI"><Description>daw_level_james</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x19"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing50=MID3<Outgoing Action="MIDI"><Description>hb_level_james</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x10"/><Value2 var="hc"/></Simple></Outgoing>
+Options50=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_level_jameshc=pplabel001C__cmt>// set daw_level_jamesgt=pp
+Name51=hb_level_jesse -> daw_level_jesse
+Incoming51=MID3<Incoming Action="MIDI"><Description>hb_level_jesse</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x11"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing51=MID3<Outgoing Action="MIDI"><Description>daw_level_jesse</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x1A"/><Value2 var="gu"/></Simple></Outgoing>
+Options51=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_level_jessegu=pplabel001B__cmt>// set hb_level_jessehd=pp
+Name52=daw_level_jesse -> hb_level_jesse
+Incoming52=MID3<Incoming Action="MIDI"><Description>daw_level_jesse</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x1A"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing52=MID3<Outgoing Action="MIDI"><Description>hb_level_jesse</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x11"/><Value2 var="hd"/></Simple></Outgoing>
+Options52=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_level_jessehd=pplabel001C__cmt>// set daw_level_jessegu=pp
+Name53=hb_level_in_mitch -> daw_level_in_mitch
+Incoming53=MID3<Incoming Action="MIDI"><Description>hb_level_in_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x12"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing53=MID3<Outgoing Action="MIDI"><Description>daw_level_in_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x1B"/><Value2 var="gv"/></Simple></Outgoing>
+Options53=Actv01Stop00OutO00StMa00000004label001F__cmt>// set daw_level_in_mitchgv=pplabel001E__cmt>// set hb_level_in_mitchhe=pp
+Name54=daw_level_in_mitch -> hb_level_in_mitch
+Incoming54=MID3<Incoming Action="MIDI"><Description>daw_level_in_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x1B"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing54=MID3<Outgoing Action="MIDI"><Description>hb_level_in_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x12"/><Value2 var="he"/></Simple></Outgoing>
+Options54=Actv01Stop00OutO00StMa00000004label001E__cmt>// set hb_level_in_mitchhe=pplabel001F__cmt>// set daw_level_in_mitchgv=pp
+Name55=hb_level_out_mitch -> daw_level_out_mitch
+Incoming55=MID3<Incoming Action="MIDI"><Description>hb_level_out_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x13"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing55=MID3<Outgoing Action="MIDI"><Description>daw_level_out_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x1C"/><Value2 var="gw"/></Simple></Outgoing>
+Options55=Actv01Stop00OutO00StMa00000004label0020__cmt>// set daw_level_out_mitchgw=pplabel001F__cmt>// set hb_level_out_mitchhg=pp
+Name56=daw_level_out_mitch -> hb_level_out_mitch
+Incoming56=MID3<Incoming Action="MIDI"><Description>daw_level_out_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x1C"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing56=MID3<Outgoing Action="MIDI"><Description>hb_level_out_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x13"/><Value2 var="hg"/></Simple></Outgoing>
+Options56=Actv01Stop00OutO00StMa00000004label001F__cmt>// set hb_level_out_mitchhg=pplabel0020__cmt>// set daw_level_out_mitchgw=pp
+Name57=hb_amp -> fx_amp
+Incoming57=MID3<Incoming Action="MIDI"><Description>hb_amp</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x14"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing57=MID3<Outgoing Action="MIDI"><Description>fx_amp</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x0B"/><Value2 var="gn"/></Simple></Outgoing>
+Options57=Actv01Stop00OutO00StMa00000004label0013__cmt>// set fx_ampgn=pplabel0013__cmt>// set hb_amphh=pp
+Name58=fx_amp -> hb_amp
+Incoming58=MID3<Incoming Action="MIDI"><Description>fx_amp</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x0B"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing58=MID3<Outgoing Action="MIDI"><Description>hb_amp</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x14"/><Value2 var="hh"/></Simple></Outgoing>
+Options58=Actv01Stop00OutO00StMa00000004label0013__cmt>// set hb_amphh=pplabel0013__cmt>// set fx_ampgn=pp
+Name59=hb_s_delay_beat -> fx_s_delay_beat
+Incoming59=MID3<Incoming Action="MIDI"><Description>hb_s_delay_beat</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x15"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing59=MID3<Outgoing Action="MIDI"><Description>fx_s_delay_beat</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x06"/><Value2 var="gi"/></Simple></Outgoing>
+Options59=Actv01Stop00OutO00StMa00000004label001C__cmt>// set fx_s_delay_beatgi=pplabel001C__cmt>// set hb_s_delay_beathi=pp
+Name60=fx_s_delay_beat -> hb_s_delay_beat
+Incoming60=MID3<Incoming Action="MIDI"><Description>fx_s_delay_beat</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x06"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing60=MID3<Outgoing Action="MIDI"><Description>hb_s_delay_beat</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x15"/><Value2 var="hi"/></Simple></Outgoing>
+Options60=Actv01Stop00OutO00StMa00000004label001C__cmt>// set hb_s_delay_beathi=pplabel001C__cmt>// set fx_s_delay_beatgi=pp
+Name61=hb_s_delay_fdbk -> fx_s_delay_fdbk
+Incoming61=MID3<Incoming Action="MIDI"><Description>hb_s_delay_fdbk</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x16"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing61=MID3<Outgoing Action="MIDI"><Description>fx_s_delay_fdbk</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x07"/><Value2 var="gj"/></Simple></Outgoing>
+Options61=Actv01Stop00OutO00StMa00000004label001C__cmt>// set fx_s_delay_fdbkgj=pplabel001C__cmt>// set hb_s_delay_fdbkhj=pp
+Name62=fx_s_delay_fdbk -> hb_s_delay_fdbk
+Incoming62=MID3<Incoming Action="MIDI"><Description>fx_s_delay_fdbk</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x07"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing62=MID3<Outgoing Action="MIDI"><Description>hb_s_delay_fdbk</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x16"/><Value2 var="hj"/></Simple></Outgoing>
+Options62=Actv01Stop00OutO00StMa00000004label001C__cmt>// set hb_s_delay_fdbkhj=pplabel001C__cmt>// set fx_s_delay_fdbkgj=pp
+Name63=hb_s_delay_drywet -> fx_s_delay_drywet
+Incoming63=MID3<Incoming Action="MIDI"><Description>hb_s_delay_drywet</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x17"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing63=MID3<Outgoing Action="MIDI"><Description>fx_s_delay_drywet</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x08"/><Value2 var="gk"/></Simple></Outgoing>
+Options63=Actv01Stop00OutO00StMa00000004label001E__cmt>// set fx_s_delay_drywetgk=pplabel001E__cmt>// set hb_s_delay_drywethk=pp
+Name64=fx_s_delay_drywet -> hb_s_delay_drywet
+Incoming64=MID3<Incoming Action="MIDI"><Description>fx_s_delay_drywet</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x08"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing64=MID3<Outgoing Action="MIDI"><Description>hb_s_delay_drywet</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x17"/><Value2 var="hk"/></Simple></Outgoing>
+Options64=Actv01Stop00OutO00StMa00000004label001E__cmt>// set hb_s_delay_drywethk=pplabel001E__cmt>// set fx_s_delay_drywetgk=pp
+Name65=hb_mitch_rec -> daw_advance_playhead
+Incoming65=MID3<Incoming Action="MIDI"><Description>hb_mitch_rec</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0A"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing65=MID3<Outgoing Action="MIDI"><Description>daw_advance_playhead</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x10"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options65=Actv01Stop00OutO00StMa00000003if(j7==0)goto0003ENDnoexecutelabel0003END
+Name66=hb_mitch_rec -> daw_play
+Incoming66=MID3<Incoming Action="MIDI"><Description>hb_mitch_rec</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0A"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing66=MID3<Outgoing Action="MIDI"><Description>daw_play</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x11"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options66=Actv01Stop00OutO00Dlay200:MillisStMa00000004if(j7==0)goto0003ENDnoexecutelabel0003ENDj7=1
+Name67=hb_mitch_rec -> daw_record
+Incoming67=MID3<Incoming Action="MIDI"><Description>hb_mitch_rec</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0A"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing67=MID3<Outgoing Action="MIDI"><Description>daw_record</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x12"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options67=Actv01Stop00OutO00Dlay1200:MillisStMa00000003g6=pphu=pph7=pp
+Name68=hb_james_mitch -> daw_james_mitch
+Incoming68=MID3<Incoming Action="MIDI"><Description>hb_james_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x01"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing68=MID3<Outgoing Action="MIDI"><Description>daw_james_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x01"/><Value2 var="jm"/></Simple></Outgoing>
+Options68=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_james_mitchjm=pplabel001B__cmt>// set hb_james_mitchhl=pp
+Name69=daw_james_mitch -> hb_james_mitch
+Incoming69=MID3<Incoming Action="MIDI"><Description>daw_james_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x01"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing69=MID3<Outgoing Action="MIDI"><Description>hb_james_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x01"/><Value2 var="hl"/></Simple></Outgoing>
+Options69=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_james_mitchhl=pplabel001C__cmt>// set daw_james_mitchjm=pp
+Name70=hb_james_james -> daw_james_james
+Incoming70=MID3<Incoming Action="MIDI"><Description>hb_james_james</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x02"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing70=MID3<Outgoing Action="MIDI"><Description>daw_james_james</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x02"/><Value2 var="jn"/></Simple></Outgoing>
+Options70=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_james_jamesjn=pplabel001B__cmt>// set hb_james_jameshm=pp
+Name71=daw_james_james -> hb_james_james
+Incoming71=MID3<Incoming Action="MIDI"><Description>daw_james_james</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x02"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing71=MID3<Outgoing Action="MIDI"><Description>hb_james_james</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x02"/><Value2 var="hm"/></Simple></Outgoing>
+Options71=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_james_jameshm=pplabel001C__cmt>// set daw_james_jamesjn=pp
+Name72=hb_james_jesse -> daw_james_jesse
+Incoming72=MID3<Incoming Action="MIDI"><Description>hb_james_jesse</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x03"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing72=MID3<Outgoing Action="MIDI"><Description>daw_james_jesse</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x03"/><Value2 var="jo"/></Simple></Outgoing>
+Options72=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_james_jessejo=pplabel001B__cmt>// set hb_james_jessehn=pp
+Name73=daw_james_jesse -> hb_james_jesse
+Incoming73=MID3<Incoming Action="MIDI"><Description>daw_james_jesse</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x03"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing73=MID3<Outgoing Action="MIDI"><Description>hb_james_jesse</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x03"/><Value2 var="hn"/></Simple></Outgoing>
+Options73=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_james_jessehn=pplabel001C__cmt>// set daw_james_jessejo=pp
+Name74=hb_james_drums -> daw_james_drums
+Incoming74=MID3<Incoming Action="MIDI"><Description>hb_james_drums</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x04"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing74=MID3<Outgoing Action="MIDI"><Description>daw_james_drums</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x04"/><Value2 var="jp"/></Simple></Outgoing>
+Options74=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_james_drumsjp=pplabel001B__cmt>// set hb_james_drumsho=pp
+Name75=daw_james_drums -> hb_james_drums
+Incoming75=MID3<Incoming Action="MIDI"><Description>daw_james_drums</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x04"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing75=MID3<Outgoing Action="MIDI"><Description>hb_james_drums</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x04"/><Value2 var="ho"/></Simple></Outgoing>
+Options75=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_james_drumsho=pplabel001C__cmt>// set daw_james_drumsjp=pp
+Name76=hb_james_vol -> daw_james_vol
+Incoming76=MID3<Incoming Action="MIDI"><Description>hb_james_vol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x05"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing76=MID3<Outgoing Action="MIDI"><Description>daw_james_vol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x05"/><Value2 var="jq"/></Simple></Outgoing>
+Options76=Actv01Stop00OutO00StMa00000004label001A__cmt>// set daw_james_voljq=pplabel0019__cmt>// set hb_james_volhp=pp
+Name77=daw_james_vol -> hb_james_vol
+Incoming77=MID3<Incoming Action="MIDI"><Description>daw_james_vol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x05"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing77=MID3<Outgoing Action="MIDI"><Description>hb_james_vol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x05"/><Value2 var="hp"/></Simple></Outgoing>
+Options77=Actv01Stop00OutO00StMa00000004label0019__cmt>// set hb_james_volhp=pplabel001A__cmt>// set daw_james_voljq=pp
+Name78=hb_james_click -> daw_james_click
+Incoming78=MID3<Incoming Action="MIDI"><Description>hb_james_click</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x06"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing78=MID3<Outgoing Action="MIDI"><Description>daw_james_click</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x06"/><Value2 var="jr"/></Simple></Outgoing>
+Options78=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_james_clickjr=pplabel001B__cmt>// set hb_james_clickhq=pp
+Name79=daw_james_click -> hb_james_click
+Incoming79=MID3<Incoming Action="MIDI"><Description>daw_james_click</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x06"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing79=MID3<Outgoing Action="MIDI"><Description>hb_james_click</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x06"/><Value2 var="hq"/></Simple></Outgoing>
+Options79=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_james_clickhq=pplabel001C__cmt>// set daw_james_clickjr=pp
+Name80=hb_james_tbvol -> daw_james_tbvol
+Incoming80=MID3<Incoming Action="MIDI"><Description>hb_james_tbvol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x07"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing80=MID3<Outgoing Action="MIDI"><Description>daw_james_tbvol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x07"/><Value2 var="js"/></Simple></Outgoing>
+Options80=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_james_tbvoljs=pplabel001B__cmt>// set hb_james_tbvolhr=pp
+Name81=daw_james_tbvol -> hb_james_tbvol
+Incoming81=MID3<Incoming Action="MIDI"><Description>daw_james_tbvol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x07"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing81=MID3<Outgoing Action="MIDI"><Description>hb_james_tbvol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x07"/><Value2 var="hr"/></Simple></Outgoing>
+Options81=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_james_tbvolhr=pplabel001C__cmt>// set daw_james_tbvoljs=pp
+Name82=hb_james_tbio -> daw_talkback
+Incoming82=MID3<Incoming Action="MIDI"><Description>hb_james_tbio</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x09"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing82=MID3<Outgoing Action="MIDI"><Description>daw_talkback</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x16"/><Value2 var="gq"/></Simple></Outgoing>
+Options82=Actv01Stop00OutO00StMa00000004label0019__cmt>// set daw_talkbackgq=pplabel001A__cmt>// set hb_james_tbioht=pp
+Name83=daw_talkback -> hb_james_tbio
+Incoming83=MID3<Incoming Action="MIDI"><Description>daw_talkback</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x16"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing83=MID3<Outgoing Action="MIDI"><Description>hb_james_tbio</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x09"/><Value2 var="ht"/></Simple></Outgoing>
+Options83=Actv01Stop00OutO00StMa00000004label001A__cmt>// set hb_james_tbioht=pplabel0019__cmt>// set daw_talkbackgq=pp
+Name84=hb_james_james_lrc -> daw_james_james_lrc
+Incoming84=MID3<Incoming Action="MIDI"><Description>hb_james_james_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0B"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing84=MID3<Outgoing Action="MIDI"><Description>daw_james_james_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x08"/><Value2 var="jt"/></Simple></Outgoing>
+Options84=Actv01Stop00OutO00StMa00000004label0020__cmt>// set daw_james_james_lrcjt=pplabel001F__cmt>// set hb_james_james_lrchv=pp
+Name85=daw_james_james_lrc -> hb_james_james_lrc
+Incoming85=MID3<Incoming Action="MIDI"><Description>daw_james_james_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x08"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing85=MID3<Outgoing Action="MIDI"><Description>hb_james_james_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0B"/><Value2 var="hv"/></Simple></Outgoing>
+Options85=Actv01Stop00OutO00StMa00000004label001F__cmt>// set hb_james_james_lrchv=pplabel0020__cmt>// set daw_james_james_lrcjt=pp
+Name86=hb_james_jesse_lrc -> daw_james_jesse_lrc
+Incoming86=MID3<Incoming Action="MIDI"><Description>hb_james_jesse_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0C"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing86=MID3<Outgoing Action="MIDI"><Description>daw_james_jesse_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x09"/><Value2 var="ju"/></Simple></Outgoing>
+Options86=Actv01Stop00OutO00StMa00000004label0020__cmt>// set daw_james_jesse_lrcju=pplabel001F__cmt>// set hb_james_jesse_lrchw=pp
+Name87=daw_james_jesse_lrc -> hb_james_jesse_lrc
+Incoming87=MID3<Incoming Action="MIDI"><Description>daw_james_jesse_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x09"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing87=MID3<Outgoing Action="MIDI"><Description>hb_james_jesse_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0C"/><Value2 var="hw"/></Simple></Outgoing>
+Options87=Actv01Stop00OutO00StMa00000004label001F__cmt>// set hb_james_jesse_lrchw=pplabel0020__cmt>// set daw_james_jesse_lrcju=pp
+Name88=hb_james_mitch_lrc -> daw_james_mitch_lrc
+Incoming88=MID3<Incoming Action="MIDI"><Description>hb_james_mitch_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0D"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing88=MID3<Outgoing Action="MIDI"><Description>daw_james_mitch_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0A"/><Value2 var="jv"/></Simple></Outgoing>
+Options88=Actv01Stop00OutO00StMa00000004label0020__cmt>// set daw_james_mitch_lrcjv=pplabel001F__cmt>// set hb_james_mitch_lrchx=pp
+Name89=daw_james_mitch_lrc -> hb_james_mitch_lrc
+Incoming89=MID3<Incoming Action="MIDI"><Description>daw_james_mitch_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0A"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing89=MID3<Outgoing Action="MIDI"><Description>hb_james_mitch_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0D"/><Value2 var="hx"/></Simple></Outgoing>
+Options89=Actv01Stop00OutO00StMa00000004label001F__cmt>// set hb_james_mitch_lrchx=pplabel0020__cmt>// set daw_james_mitch_lrcjv=pp
+Name90=hb_james_rec -> daw_advance_playhead
+Incoming90=MID3<Incoming Action="MIDI"><Description>hb_james_rec</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0A"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing90=MID3<Outgoing Action="MIDI"><Description>daw_advance_playhead</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x10"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options90=Actv01Stop00OutO00StMa00000003if(j7==0)goto0003ENDnoexecutelabel0003END
+Name91=hb_james_rec -> daw_play
+Incoming91=MID3<Incoming Action="MIDI"><Description>hb_james_rec</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0A"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing91=MID3<Outgoing Action="MIDI"><Description>daw_play</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x11"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options91=Actv01Stop00OutO00Dlay200:MillisStMa00000004if(j7==0)goto0003ENDnoexecutelabel0003ENDj7=1
+Name92=hb_james_rec -> daw_record
+Incoming92=MID3<Incoming Action="MIDI"><Description>hb_james_rec</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0A"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing92=MID3<Outgoing Action="MIDI"><Description>daw_record</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x12"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options92=Actv01Stop00OutO00StMa00000003g6=pphu=pph7=pp
+Name93=hb_jesse_mitch -> daw_jesse_mitch
+Incoming93=MID3<Incoming Action="MIDI"><Description>hb_jesse_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x01"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing93=MID3<Outgoing Action="MIDI"><Description>daw_jesse_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x01"/><Value2 var="jw"/></Simple></Outgoing>
+Options93=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_jesse_mitchjw=pplabel001B__cmt>// set hb_jesse_mitchhy=pp
+Name94=daw_jesse_mitch -> hb_jesse_mitch
+Incoming94=MID3<Incoming Action="MIDI"><Description>daw_jesse_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x01"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing94=MID3<Outgoing Action="MIDI"><Description>hb_jesse_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x01"/><Value2 var="hy"/></Simple></Outgoing>
+Options94=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_jesse_mitchhy=pplabel001C__cmt>// set daw_jesse_mitchjw=pp
+Name95=hb_jesse_james -> daw_jesse_james
+Incoming95=MID3<Incoming Action="MIDI"><Description>hb_jesse_james</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x02"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing95=MID3<Outgoing Action="MIDI"><Description>daw_jesse_james</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x02"/><Value2 var="jx"/></Simple></Outgoing>
+Options95=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_jesse_jamesjx=pplabel001B__cmt>// set hb_jesse_jameshz=pp
+Name96=daw_jesse_james -> hb_jesse_james
+Incoming96=MID3<Incoming Action="MIDI"><Description>daw_jesse_james</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x02"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing96=MID3<Outgoing Action="MIDI"><Description>hb_jesse_james</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x02"/><Value2 var="hz"/></Simple></Outgoing>
+Options96=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_jesse_jameshz=pplabel001C__cmt>// set daw_jesse_jamesjx=pp
+Name97=hb_jesse_jesse -> daw_jesse_jesse
+Incoming97=MID3<Incoming Action="MIDI"><Description>hb_jesse_jesse</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x03"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing97=MID3<Outgoing Action="MIDI"><Description>daw_jesse_jesse</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x03"/><Value2 var="jy"/></Simple></Outgoing>
+Options97=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_jesse_jessejy=pplabel001B__cmt>// set hb_jesse_jesseh0=pp
+Name98=daw_jesse_jesse -> hb_jesse_jesse
+Incoming98=MID3<Incoming Action="MIDI"><Description>daw_jesse_jesse</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x03"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing98=MID3<Outgoing Action="MIDI"><Description>hb_jesse_jesse</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x03"/><Value2 var="h0"/></Simple></Outgoing>
+Options98=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_jesse_jesseh0=pplabel001C__cmt>// set daw_jesse_jessejy=pp
+Name99=hb_jesse_drums -> daw_jesse_drums
+Incoming99=MID3<Incoming Action="MIDI"><Description>hb_jesse_drums</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x04"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing99=MID3<Outgoing Action="MIDI"><Description>daw_jesse_drums</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x04"/><Value2 var="jz"/></Simple></Outgoing>
+Options99=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_jesse_drumsjz=pplabel001B__cmt>// set hb_jesse_drumsh1=pp
+Name100=daw_jesse_drums -> hb_jesse_drums
+Incoming100=MID3<Incoming Action="MIDI"><Description>daw_jesse_drums</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x04"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing100=MID3<Outgoing Action="MIDI"><Description>hb_jesse_drums</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x04"/><Value2 var="h1"/></Simple></Outgoing>
+Options100=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_jesse_drumsh1=pplabel001C__cmt>// set daw_jesse_drumsjz=pp
+Name101=hb_jesse_vol -> daw_jesse_vol
+Incoming101=MID3<Incoming Action="MIDI"><Description>hb_jesse_vol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x05"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing101=MID3<Outgoing Action="MIDI"><Description>daw_jesse_vol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x05"/><Value2 var="j0"/></Simple></Outgoing>
+Options101=Actv01Stop00OutO00StMa00000004label001A__cmt>// set daw_jesse_volj0=pplabel0019__cmt>// set hb_jesse_volh2=pp
+Name102=daw_jesse_vol -> hb_jesse_vol
+Incoming102=MID3<Incoming Action="MIDI"><Description>daw_jesse_vol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x05"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing102=MID3<Outgoing Action="MIDI"><Description>hb_jesse_vol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x05"/><Value2 var="h2"/></Simple></Outgoing>
+Options102=Actv01Stop00OutO00StMa00000004label0019__cmt>// set hb_jesse_volh2=pplabel001A__cmt>// set daw_jesse_volj0=pp
+Name103=hb_jesse_click -> daw_jesse_click
+Incoming103=MID3<Incoming Action="MIDI"><Description>hb_jesse_click</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x06"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing103=MID3<Outgoing Action="MIDI"><Description>daw_jesse_click</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x06"/><Value2 var="j1"/></Simple></Outgoing>
+Options103=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_jesse_clickj1=pplabel001B__cmt>// set hb_jesse_clickh3=pp
+Name104=daw_jesse_click -> hb_jesse_click
+Incoming104=MID3<Incoming Action="MIDI"><Description>daw_jesse_click</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x06"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing104=MID3<Outgoing Action="MIDI"><Description>hb_jesse_click</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x06"/><Value2 var="h3"/></Simple></Outgoing>
+Options104=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_jesse_clickh3=pplabel001C__cmt>// set daw_jesse_clickj1=pp
+Name105=hb_jesse_tbvol -> daw_jesse_tbvol
+Incoming105=MID3<Incoming Action="MIDI"><Description>hb_jesse_tbvol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x07"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing105=MID3<Outgoing Action="MIDI"><Description>daw_jesse_tbvol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x07"/><Value2 var="j2"/></Simple></Outgoing>
+Options105=Actv01Stop00OutO00StMa00000004label001C__cmt>// set daw_jesse_tbvolj2=pplabel001B__cmt>// set hb_jesse_tbvolh4=pp
+Name106=daw_jesse_tbvol -> hb_jesse_tbvol
+Incoming106=MID3<Incoming Action="MIDI"><Description>daw_jesse_tbvol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x07"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing106=MID3<Outgoing Action="MIDI"><Description>hb_jesse_tbvol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x07"/><Value2 var="h4"/></Simple></Outgoing>
+Options106=Actv01Stop00OutO00StMa00000004label001B__cmt>// set hb_jesse_tbvolh4=pplabel001C__cmt>// set daw_jesse_tbvolj2=pp
+Name107=hb_jesse_tbio -> daw_talkback
+Incoming107=MID3<Incoming Action="MIDI"><Description>hb_jesse_tbio</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x09"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing107=MID3<Outgoing Action="MIDI"><Description>daw_talkback</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x16"/><Value2 var="gq"/></Simple></Outgoing>
+Options107=Actv01Stop00OutO00StMa00000004label0019__cmt>// set daw_talkbackgq=pplabel001A__cmt>// set hb_jesse_tbioh6=pp
+Name108=daw_talkback -> hb_jesse_tbio
+Incoming108=MID3<Incoming Action="MIDI"><Description>daw_talkback</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x16"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing108=MID3<Outgoing Action="MIDI"><Description>hb_jesse_tbio</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x09"/><Value2 var="h6"/></Simple></Outgoing>
+Options108=Actv01Stop00OutO00StMa00000004label001A__cmt>// set hb_jesse_tbioh6=pplabel0019__cmt>// set daw_talkbackgq=pp
+Name109=hb_jesse_james_lrc -> daw_jesse_james_lrc
+Incoming109=MID3<Incoming Action="MIDI"><Description>hb_jesse_james_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0B"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing109=MID3<Outgoing Action="MIDI"><Description>daw_jesse_james_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x08"/><Value2 var="j3"/></Simple></Outgoing>
+Options109=Actv01Stop00OutO00StMa00000004label0020__cmt>// set daw_jesse_james_lrcj3=pplabel001F__cmt>// set hb_jesse_james_lrch8=pp
+Name110=daw_jesse_james_lrc -> hb_jesse_james_lrc
+Incoming110=MID3<Incoming Action="MIDI"><Description>daw_jesse_james_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x08"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing110=MID3<Outgoing Action="MIDI"><Description>hb_jesse_james_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0B"/><Value2 var="h8"/></Simple></Outgoing>
+Options110=Actv01Stop00OutO00StMa00000004label001F__cmt>// set hb_jesse_james_lrch8=pplabel0020__cmt>// set daw_jesse_james_lrcj3=pp
+Name111=hb_jesse_jesse_lrc -> daw_jesse_jesse_lrc
+Incoming111=MID3<Incoming Action="MIDI"><Description>hb_jesse_jesse_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0C"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing111=MID3<Outgoing Action="MIDI"><Description>daw_jesse_jesse_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x09"/><Value2 var="j4"/></Simple></Outgoing>
+Options111=Actv01Stop00OutO00StMa00000004label0020__cmt>// set daw_jesse_jesse_lrcj4=pplabel001F__cmt>// set hb_jesse_jesse_lrch9=pp
+Name112=daw_jesse_jesse_lrc -> hb_jesse_jesse_lrc
+Incoming112=MID3<Incoming Action="MIDI"><Description>daw_jesse_jesse_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x09"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing112=MID3<Outgoing Action="MIDI"><Description>hb_jesse_jesse_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0C"/><Value2 var="h9"/></Simple></Outgoing>
+Options112=Actv01Stop00OutO00StMa00000004label001F__cmt>// set hb_jesse_jesse_lrch9=pplabel0020__cmt>// set daw_jesse_jesse_lrcj4=pp
+Name113=hb_jesse_mitch_lrc -> daw_jesse_mitch_lrc
+Incoming113=MID3<Incoming Action="MIDI"><Description>hb_jesse_mitch_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0D"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing113=MID3<Outgoing Action="MIDI"><Description>daw_jesse_mitch_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0A"/><Value2 var="j5"/></Simple></Outgoing>
+Options113=Actv01Stop00OutO00StMa00000004label0020__cmt>// set daw_jesse_mitch_lrcj5=pplabel001F__cmt>// set hb_jesse_mitch_lrcja=pp
+Name114=daw_jesse_mitch_lrc -> hb_jesse_mitch_lrc
+Incoming114=MID3<Incoming Action="MIDI"><Description>daw_jesse_mitch_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0A"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing114=MID3<Outgoing Action="MIDI"><Description>hb_jesse_mitch_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0D"/><Value2 var="ja"/></Simple></Outgoing>
+Options114=Actv01Stop00OutO00StMa00000004label001F__cmt>// set hb_jesse_mitch_lrcja=pplabel0020__cmt>// set daw_jesse_mitch_lrcj5=pp
+Name115=hb_jesse_rec -> daw_advance_playhead
+Incoming115=MID3<Incoming Action="MIDI"><Description>hb_jesse_rec</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0A"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing115=MID3<Outgoing Action="MIDI"><Description>daw_advance_playhead</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x10"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options115=Actv01Stop00OutO00StMa00000003if(j7==0)goto0003ENDnoexecutelabel0003END
+Name116=hb_jesse_rec -> daw_play
+Incoming116=MID3<Incoming Action="MIDI"><Description>hb_jesse_rec</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0A"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing116=MID3<Outgoing Action="MIDI"><Description>daw_play</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x11"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options116=Actv01Stop00OutO00Dlay200:MillisStMa00000004if(j7==0)goto0003ENDnoexecutelabel0003ENDj7=1
+Name117=hb_jesse_rec -> daw_record
+Incoming117=MID3<Incoming Action="MIDI"><Description>hb_jesse_rec</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0A"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing117=MID3<Outgoing Action="MIDI"><Description>daw_record</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x12"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options117=Actv01Stop00OutO00StMa00000003g6=pphu=pph7=pp
+Name118=hb_mitch_solo -> 
+Incoming118=MID3<Incoming Action="MIDI"><Description>hb_mitch_solo</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x08"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing118=None
+Options118=Actv01Stop00OutO00StMa0000001Ag4=ppif(pp==127)goto0002ONlabel0003OFFjm=kbhl=kbjw=kchy=kcjc=j9gy=j9jd=kagz=kagoto0003ENDlabel0002ONkb=jmjm=0hl=0kc=jwjw=0hy=0j9=jcjc=0gy=0ka=jdjd=0gz=0label0003END
+Name119=hb_james_solo -> 
+Incoming119=MID3<Incoming Action="MIDI"><Description>hb_james_solo</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x08"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing119=None
+Options119=Actv01Stop00OutO00StMa0000001Ahs=ppif(pp==127)goto0002ONlabel0003OFFjx=khhz=khjc=kggy=kgjo=kehn=kejm=kdhl=kdgoto0003ENDlabel0002ONkh=jxjx=0hz=0kg=jcjc=0gy=0ke=jojo=0hn=0kd=jmjm=0hl=0label0003END
+Name120=hb_jesse_solo -> 
+Incoming120=MID3<Incoming Action="MIDI"><Description>hb_jesse_solo</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x08"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing120=None
+Options120=Actv01Stop00OutO00StMa0000001Ah5=ppif(pp==127)goto0002ONlabel0003OFFjd=kkgz=kkjo=klhn=kljw=kihy=kijx=kjhz=kjgoto0003ENDlabel0002ONkk=jdjd=0gz=0kl=jojo=0hn=0ki=jwjw=0hy=0kj=jxjx=0hz=0label0003END
+Name121=fcb1010_btn_17 -> song_blind
+Incoming121=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_17</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x11"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing121=MID3<Outgoing Action="MIDI"><Description>song_blind</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x64"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options121=Actv01Stop00OutO00StMa00000003if(j8==km)goto0004NEXTnoexecutelabel0004NEXTStMa00000003if(j8=km)goto0003ENDnoexecutelabel0003END
+Name122=fcb1010_btn_18 -> song_intro_blind
+Incoming122=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_18</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x12"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing122=None
+Options122=Actv01Stop00OutO00StMa00000003if(j8=km)goto0003ENDnoexecutelabel0003END
+Name123=fcb1010_btn_19 -> song_click_blind
+Incoming123=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_19</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x13"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing123=None
+Options123=Actv01Stop00OutO00StMa00000003if(j8=km)goto0003ENDnoexecutelabel0003END
+Name124=fcb1010_btn_17 -> song_old_pete
+Incoming124=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_17</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x11"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing124=MID3<Outgoing Action="MIDI"><Description>song_old_pete</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x65"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options124=Actv01Stop00OutO00StMa00000003if(j8=kn)goto0003ENDnoexecutelabel0003END
+Name125=fcb1010_btn_18 -> song_intro_old_pete
+Incoming125=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_18</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x12"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing125=None
+Options125=Actv01Stop00OutO00StMa00000003if(j8=kn)goto0003ENDnoexecutelabel0003END
+Name126=fcb1010_btn_19 -> song_click_old_pete
+Incoming126=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_19</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x13"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing126=None
+Options126=Actv01Stop00OutO00StMa00000003if(j8=kn)goto0003ENDnoexecutelabel0003END
+Name127=fcb1010_btn_17 -> song_sono
+Incoming127=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_17</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x11"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing127=MID3<Outgoing Action="MIDI"><Description>song_sono</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x66"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options127=Actv01Stop00OutO00StMa00000003if(j8=ko)goto0003ENDnoexecutelabel0003END
+Name128=fcb1010_btn_18 -> song_intro_sono
+Incoming128=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_18</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x12"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing128=None
+Options128=Actv01Stop00OutO00StMa00000003if(j8=ko)goto0003ENDnoexecutelabel0003END
+Name129=fcb1010_btn_19 -> song_click_sono
+Incoming129=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_19</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x13"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing129=None
+Options129=Actv01Stop00OutO00StMa00000003if(j8=ko)goto0003ENDnoexecutelabel0003END
+Name130=fcb1010_btn_17 -> song_petrichor
+Incoming130=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_17</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x11"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing130=MID3<Outgoing Action="MIDI"><Description>song_petrichor</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x67"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options130=Actv01Stop00OutO00StMa00000003if(j8=kp)goto0003ENDnoexecutelabel0003END
+Name131=fcb1010_btn_18 -> song_intro_petrichor
+Incoming131=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_18</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x12"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing131=None
+Options131=Actv01Stop00OutO00StMa00000003if(j8=kp)goto0003ENDnoexecutelabel0003END
+Name132=fcb1010_btn_19 -> song_click_petrichor
+Incoming132=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_19</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x13"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing132=None
+Options132=Actv01Stop00OutO00StMa00000003if(j8=kp)goto0003ENDnoexecutelabel0003END
+Name133=fcb1010_btn_17 -> song_space
+Incoming133=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_17</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x11"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing133=MID3<Outgoing Action="MIDI"><Description>song_space</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x68"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options133=Actv01Stop00OutO00StMa00000003if(j8=kq)goto0003ENDnoexecutelabel0003END
+Name134=fcb1010_btn_18 -> song_intro_space
+Incoming134=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_18</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x12"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing134=None
+Options134=Actv01Stop00OutO00StMa00000003if(j8=kq)goto0003ENDnoexecutelabel0003END
+Name135=fcb1010_btn_19 -> song_click_space
+Incoming135=MID3<Incoming Action="MIDI"><Description>fcb1010_btn_19</Description><Ports><Port>Scarlett 18i20 USB</Port><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x13"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing135=None
+Options135=Actv01Stop00OutO00StMa00000003if(j8=kq)goto0003ENDnoexecutelabel0003END
+
+[Preset.2]
+Name=Setup
+Active=0
+PresetSwitchIgnore=0
+Name0=Output fx_tuner
+Incoming0=Pres080000
+Outgoing0=MID3<Outgoing Action="MIDI"><Description>fx_tuner</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x01"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options0=Actv00Stop00OutO00
+Name1=Output fx_lowcut
+Incoming1=Pres080000
+Outgoing1=MID3<Outgoing Action="MIDI"><Description>fx_lowcut</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x02"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options1=Actv00Stop00OutO00
+Name2=Output fx_hicut
+Incoming2=Pres080000
+Outgoing2=MID3<Outgoing Action="MIDI"><Description>fx_hicut</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x03"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options2=Actv00Stop00OutO00
+Name3=Output fx_dist
+Incoming3=Pres080000
+Outgoing3=MID3<Outgoing Action="MIDI"><Description>fx_dist</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x04"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options3=Actv00Stop00OutO00
+Name4=Output fx_delay
+Incoming4=Pres080000
+Outgoing4=MID3<Outgoing Action="MIDI"><Description>fx_delay</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x05"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options4=Actv00Stop00OutO00
+Name5=Output fx_s_delay_beat
+Incoming5=Pres080000
+Outgoing5=MID3<Outgoing Action="MIDI"><Description>fx_s_delay_beat</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x06"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options5=Actv00Stop00OutO00
+Name6=Output fx_s_delay_fdbk
+Incoming6=Pres080000
+Outgoing6=MID3<Outgoing Action="MIDI"><Description>fx_s_delay_fdbk</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x07"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options6=Actv00Stop00OutO00
+Name7=Output fx_s_delay_drywet
+Incoming7=Pres080000
+Outgoing7=MID3<Outgoing Action="MIDI"><Description>fx_s_delay_drywet</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x08"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options7=Actv00Stop00OutO00
+Name8=Output fx_reverb
+Incoming8=Pres080000
+Outgoing8=MID3<Outgoing Action="MIDI"><Description>fx_reverb</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x09"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options8=Actv00Stop00OutO00
+Name9=Output fx_octaver
+Incoming9=Pres080000
+Outgoing9=MID3<Outgoing Action="MIDI"><Description>fx_octaver</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x0A"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options9=Actv00Stop00OutO00
+Name10=Output fx_amp
+Incoming10=Pres080000
+Outgoing10=MID3<Outgoing Action="MIDI"><Description>fx_amp</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x0B"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options10=Actv00Stop00OutO00
+Name11=Output fx_volume
+Incoming11=Pres080000
+Outgoing11=MID3<Outgoing Action="MIDI"><Description>fx_volume</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x0C"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options11=Actv00Stop00OutO00
+Name12=Output fx_exp
+Incoming12=Pres080000
+Outgoing12=MID3<Outgoing Action="MIDI"><Description>fx_exp</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x0D"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options12=Actv00Stop00OutO00
+Name13=Output daw_stop_playhead
+Incoming13=Pres080000
+Outgoing13=MID3<Outgoing Action="MIDI"><Description>daw_stop_playhead</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x0E"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options13=Actv00Stop00OutO00
+Name14=Output daw_stop_clips
+Incoming14=Pres080000
+Outgoing14=MID3<Outgoing Action="MIDI"><Description>daw_stop_clips</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x0F"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options14=Actv00Stop00OutO00
+Name15=Output daw_advance_playhead
+Incoming15=Pres080000
+Outgoing15=MID3<Outgoing Action="MIDI"><Description>daw_advance_playhead</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x10"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options15=Actv00Stop00OutO00
+Name16=Output daw_play
+Incoming16=Pres080000
+Outgoing16=MID3<Outgoing Action="MIDI"><Description>daw_play</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x11"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options16=Actv00Stop00OutO00
+Name17=Output daw_record
+Incoming17=Pres080000
+Outgoing17=MID3<Outgoing Action="MIDI"><Description>daw_record</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x12"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options17=Actv00Stop00OutO00
+Name18=Output daw_start_drums
+Incoming18=Pres080000
+Outgoing18=MID3<Outgoing Action="MIDI"><Description>daw_start_drums</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x13"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options18=Actv00Stop00OutO00
+Name19=Output daw_start_trans_drums
+Incoming19=Pres080000
+Outgoing19=MID3<Outgoing Action="MIDI"><Description>daw_start_trans_drums</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x14"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options19=Actv00Stop00OutO00
+Name20=Output daw_start_click
+Incoming20=Pres080000
+Outgoing20=MID3<Outgoing Action="MIDI"><Description>daw_start_click</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x15"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options20=Actv00Stop00OutO00
+Name21=Output daw_talkback
+Incoming21=Pres080000
+Outgoing21=MID3<Outgoing Action="MIDI"><Description>daw_talkback</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x16"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options21=Actv00Stop00OutO00
+Name22=Output daw_bass_out
+Incoming22=Pres080000
+Outgoing22=MID3<Outgoing Action="MIDI"><Description>daw_bass_out</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x17"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options22=Actv00Stop00OutO00
+Name23=Output daw_drums_out
+Incoming23=Pres080000
+Outgoing23=MID3<Outgoing Action="MIDI"><Description>daw_drums_out</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x18"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options23=Actv00Stop00OutO00
+Name24=Output daw_level_james
+Incoming24=Pres080000
+Outgoing24=MID3<Outgoing Action="MIDI"><Description>daw_level_james</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x19"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options24=Actv00Stop00OutO00
+Name25=Output daw_level_jesse
+Incoming25=Pres080000
+Outgoing25=MID3<Outgoing Action="MIDI"><Description>daw_level_jesse</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x1A"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options25=Actv00Stop00OutO00
+Name26=Output daw_level_in_mitch
+Incoming26=Pres080000
+Outgoing26=MID3<Outgoing Action="MIDI"><Description>daw_level_in_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x1B"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options26=Actv00Stop00OutO00
+Name27=Output daw_level_out_mitch
+Incoming27=Pres080000
+Outgoing27=MID3<Outgoing Action="MIDI"><Description>daw_level_out_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x1C"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options27=Actv00Stop00OutO00
+Name28=Output hb_mitch_mitch
+Incoming28=Pres080000
+Outgoing28=MID3<Outgoing Action="MIDI"><Description>hb_mitch_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x01"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options28=Actv00Stop00OutO00
+Name29=Output hb_mitch_james
+Incoming29=Pres080000
+Outgoing29=MID3<Outgoing Action="MIDI"><Description>hb_mitch_james</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x02"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options29=Actv00Stop00OutO00
+Name30=Output hb_mitch_jesse
+Incoming30=Pres080000
+Outgoing30=MID3<Outgoing Action="MIDI"><Description>hb_mitch_jesse</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x03"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options30=Actv00Stop00OutO00
+Name31=Output hb_mitch_drums
+Incoming31=Pres080000
+Outgoing31=MID3<Outgoing Action="MIDI"><Description>hb_mitch_drums</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x04"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options31=Actv00Stop00OutO00
+Name32=Output hb_mitch_vol
+Incoming32=Pres080000
+Outgoing32=MID3<Outgoing Action="MIDI"><Description>hb_mitch_vol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x05"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options32=Actv00Stop00OutO00
+Name33=Output hb_mitch_click
+Incoming33=Pres080000
+Outgoing33=MID3<Outgoing Action="MIDI"><Description>hb_mitch_click</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x06"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options33=Actv00Stop00OutO00
+Name34=Output hb_mitch_tbvol
+Incoming34=Pres080000
+Outgoing34=MID3<Outgoing Action="MIDI"><Description>hb_mitch_tbvol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x07"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options34=Actv00Stop00OutO00
+Name35=Output hb_mitch_solo
+Incoming35=Pres080000
+Outgoing35=MID3<Outgoing Action="MIDI"><Description>hb_mitch_solo</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x08"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options35=Actv00Stop00OutO00
+Name36=Output hb_mitch_tbio
+Incoming36=Pres080000
+Outgoing36=MID3<Outgoing Action="MIDI"><Description>hb_mitch_tbio</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x09"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options36=Actv00Stop00OutO00
+Name37=Output hb_mitch_rec
+Incoming37=Pres080000
+Outgoing37=MID3<Outgoing Action="MIDI"><Description>hb_mitch_rec</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0A"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options37=Actv00Stop00OutO00
+Name38=Output hb_mitch_james_lrc
+Incoming38=Pres080000
+Outgoing38=MID3<Outgoing Action="MIDI"><Description>hb_mitch_james_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0B"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options38=Actv00Stop00OutO00
+Name39=Output hb_mitch_jesse_lrc
+Incoming39=Pres080000
+Outgoing39=MID3<Outgoing Action="MIDI"><Description>hb_mitch_jesse_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0C"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options39=Actv00Stop00OutO00
+Name40=Output hb_mitch_mitch_lrc
+Incoming40=Pres080000
+Outgoing40=MID3<Outgoing Action="MIDI"><Description>hb_mitch_mitch_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0D"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options40=Actv00Stop00OutO00
+Name41=Output hb_bass_out
+Incoming41=Pres080000
+Outgoing41=MID3<Outgoing Action="MIDI"><Description>hb_bass_out</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0E"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options41=Actv00Stop00OutO00
+Name42=Output hb_drums_out
+Incoming42=Pres080000
+Outgoing42=MID3<Outgoing Action="MIDI"><Description>hb_drums_out</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0F"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options42=Actv00Stop00OutO00
+Name43=Output hb_level_james
+Incoming43=Pres080000
+Outgoing43=MID3<Outgoing Action="MIDI"><Description>hb_level_james</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x10"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options43=Actv00Stop00OutO00
+Name44=Output hb_level_jesse
+Incoming44=Pres080000
+Outgoing44=MID3<Outgoing Action="MIDI"><Description>hb_level_jesse</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x11"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options44=Actv00Stop00OutO00
+Name45=Output hb_level_in_mitch
+Incoming45=Pres080000
+Outgoing45=MID3<Outgoing Action="MIDI"><Description>hb_level_in_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x12"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options45=Actv00Stop00OutO00
+Name46=Output hb_level_out_mitch
+Incoming46=Pres080000
+Outgoing46=MID3<Outgoing Action="MIDI"><Description>hb_level_out_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x13"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options46=Actv00Stop00OutO00
+Name47=Output hb_amp
+Incoming47=Pres080000
+Outgoing47=MID3<Outgoing Action="MIDI"><Description>hb_amp</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x14"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options47=Actv00Stop00OutO00
+Name48=Output hb_s_delay_beat
+Incoming48=Pres080000
+Outgoing48=MID3<Outgoing Action="MIDI"><Description>hb_s_delay_beat</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x15"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options48=Actv00Stop00OutO00
+Name49=Output hb_s_delay_fdbk
+Incoming49=Pres080000
+Outgoing49=MID3<Outgoing Action="MIDI"><Description>hb_s_delay_fdbk</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x16"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options49=Actv00Stop00OutO00
+Name50=Output hb_s_delay_drywet
+Incoming50=Pres080000
+Outgoing50=MID3<Outgoing Action="MIDI"><Description>hb_s_delay_drywet</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x17"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options50=Actv00Stop00OutO00
+Name51=Output hb_james_mitch
+Incoming51=Pres080000
+Outgoing51=MID3<Outgoing Action="MIDI"><Description>hb_james_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x01"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options51=Actv00Stop00OutO00
+Name52=Output hb_james_james
+Incoming52=Pres080000
+Outgoing52=MID3<Outgoing Action="MIDI"><Description>hb_james_james</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x02"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options52=Actv00Stop00OutO00
+Name53=Output hb_james_jesse
+Incoming53=Pres080000
+Outgoing53=MID3<Outgoing Action="MIDI"><Description>hb_james_jesse</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x03"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options53=Actv00Stop00OutO00
+Name54=Output hb_james_drums
+Incoming54=Pres080000
+Outgoing54=MID3<Outgoing Action="MIDI"><Description>hb_james_drums</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x04"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options54=Actv00Stop00OutO00
+Name55=Output hb_james_vol
+Incoming55=Pres080000
+Outgoing55=MID3<Outgoing Action="MIDI"><Description>hb_james_vol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x05"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options55=Actv00Stop00OutO00
+Name56=Output hb_james_click
+Incoming56=Pres080000
+Outgoing56=MID3<Outgoing Action="MIDI"><Description>hb_james_click</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x06"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options56=Actv00Stop00OutO00
+Name57=Output hb_james_tbvol
+Incoming57=Pres080000
+Outgoing57=MID3<Outgoing Action="MIDI"><Description>hb_james_tbvol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x07"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options57=Actv00Stop00OutO00
+Name58=Output hb_james_solo
+Incoming58=Pres080000
+Outgoing58=MID3<Outgoing Action="MIDI"><Description>hb_james_solo</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x08"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options58=Actv00Stop00OutO00
+Name59=Output hb_james_tbio
+Incoming59=Pres080000
+Outgoing59=MID3<Outgoing Action="MIDI"><Description>hb_james_tbio</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x09"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options59=Actv00Stop00OutO00
+Name60=Output hb_james_rec
+Incoming60=Pres080000
+Outgoing60=MID3<Outgoing Action="MIDI"><Description>hb_james_rec</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0A"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options60=Actv00Stop00OutO00
+Name61=Output hb_james_james_lrc
+Incoming61=Pres080000
+Outgoing61=MID3<Outgoing Action="MIDI"><Description>hb_james_james_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0B"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options61=Actv00Stop00OutO00
+Name62=Output hb_james_jesse_lrc
+Incoming62=Pres080000
+Outgoing62=MID3<Outgoing Action="MIDI"><Description>hb_james_jesse_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0C"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options62=Actv00Stop00OutO00
+Name63=Output hb_james_mitch_lrc
+Incoming63=Pres080000
+Outgoing63=MID3<Outgoing Action="MIDI"><Description>hb_james_mitch_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0D"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options63=Actv00Stop00OutO00
+Name64=Output hb_jesse_mitch
+Incoming64=Pres080000
+Outgoing64=MID3<Outgoing Action="MIDI"><Description>hb_jesse_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x01"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options64=Actv00Stop00OutO00
+Name65=Output hb_jesse_james
+Incoming65=Pres080000
+Outgoing65=MID3<Outgoing Action="MIDI"><Description>hb_jesse_james</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x02"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options65=Actv00Stop00OutO00
+Name66=Output hb_jesse_jesse
+Incoming66=Pres080000
+Outgoing66=MID3<Outgoing Action="MIDI"><Description>hb_jesse_jesse</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x03"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options66=Actv00Stop00OutO00
+Name67=Output hb_jesse_drums
+Incoming67=Pres080000
+Outgoing67=MID3<Outgoing Action="MIDI"><Description>hb_jesse_drums</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x04"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options67=Actv00Stop00OutO00
+Name68=Output hb_jesse_vol
+Incoming68=Pres080000
+Outgoing68=MID3<Outgoing Action="MIDI"><Description>hb_jesse_vol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x05"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options68=Actv00Stop00OutO00
+Name69=Output hb_jesse_click
+Incoming69=Pres080000
+Outgoing69=MID3<Outgoing Action="MIDI"><Description>hb_jesse_click</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x06"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options69=Actv00Stop00OutO00
+Name70=Output hb_jesse_tbvol
+Incoming70=Pres080000
+Outgoing70=MID3<Outgoing Action="MIDI"><Description>hb_jesse_tbvol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x07"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options70=Actv00Stop00OutO00
+Name71=Output hb_jesse_solo
+Incoming71=Pres080000
+Outgoing71=MID3<Outgoing Action="MIDI"><Description>hb_jesse_solo</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x08"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options71=Actv00Stop00OutO00
+Name72=Output hb_jesse_tbio
+Incoming72=Pres080000
+Outgoing72=MID3<Outgoing Action="MIDI"><Description>hb_jesse_tbio</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x09"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options72=Actv00Stop00OutO00
+Name73=Output hb_jesse_rec
+Incoming73=Pres080000
+Outgoing73=MID3<Outgoing Action="MIDI"><Description>hb_jesse_rec</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0A"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options73=Actv00Stop00OutO00
+Name74=Output hb_jesse_james_lrc
+Incoming74=Pres080000
+Outgoing74=MID3<Outgoing Action="MIDI"><Description>hb_jesse_james_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0B"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options74=Actv00Stop00OutO00
+Name75=Output hb_jesse_jesse_lrc
+Incoming75=Pres080000
+Outgoing75=MID3<Outgoing Action="MIDI"><Description>hb_jesse_jesse_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0C"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options75=Actv00Stop00OutO00
+Name76=Output hb_jesse_mitch_lrc
+Incoming76=Pres080000
+Outgoing76=MID3<Outgoing Action="MIDI"><Description>hb_jesse_mitch_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0D"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options76=Actv00Stop00OutO00
+Name77=Output daw_mitch_mitch
+Incoming77=Pres080000
+Outgoing77=MID3<Outgoing Action="MIDI"><Description>daw_mitch_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x01"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options77=Actv00Stop00OutO00
+Name78=Output daw_mitch_james
+Incoming78=Pres080000
+Outgoing78=MID3<Outgoing Action="MIDI"><Description>daw_mitch_james</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x02"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options78=Actv00Stop00OutO00
+Name79=Output daw_mitch_jesse
+Incoming79=Pres080000
+Outgoing79=MID3<Outgoing Action="MIDI"><Description>daw_mitch_jesse</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x03"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options79=Actv00Stop00OutO00
+Name80=Output daw_mitch_drums
+Incoming80=Pres080000
+Outgoing80=MID3<Outgoing Action="MIDI"><Description>daw_mitch_drums</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x04"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options80=Actv00Stop00OutO00
+Name81=Output daw_mitch_vol
+Incoming81=Pres080000
+Outgoing81=MID3<Outgoing Action="MIDI"><Description>daw_mitch_vol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x05"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options81=Actv00Stop00OutO00
+Name82=Output daw_mitch_click
+Incoming82=Pres080000
+Outgoing82=MID3<Outgoing Action="MIDI"><Description>daw_mitch_click</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x06"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options82=Actv00Stop00OutO00
+Name83=Output daw_mitch_tbvol
+Incoming83=Pres080000
+Outgoing83=MID3<Outgoing Action="MIDI"><Description>daw_mitch_tbvol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x07"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options83=Actv00Stop00OutO00
+Name84=Output daw_mitch_james_lrc
+Incoming84=Pres080000
+Outgoing84=MID3<Outgoing Action="MIDI"><Description>daw_mitch_james_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x08"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options84=Actv00Stop00OutO00
+Name85=Output daw_mitch_jesse_lrc
+Incoming85=Pres080000
+Outgoing85=MID3<Outgoing Action="MIDI"><Description>daw_mitch_jesse_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x09"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options85=Actv00Stop00OutO00
+Name86=Output daw_mitch_mitch_lrc
+Incoming86=Pres080000
+Outgoing86=MID3<Outgoing Action="MIDI"><Description>daw_mitch_mitch_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0A"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options86=Actv00Stop00OutO00
+Name87=Output daw_james_mitch
+Incoming87=Pres080000
+Outgoing87=MID3<Outgoing Action="MIDI"><Description>daw_james_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x01"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options87=Actv00Stop00OutO00
+Name88=Output daw_james_james
+Incoming88=Pres080000
+Outgoing88=MID3<Outgoing Action="MIDI"><Description>daw_james_james</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x02"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options88=Actv00Stop00OutO00
+Name89=Output daw_james_jesse
+Incoming89=Pres080000
+Outgoing89=MID3<Outgoing Action="MIDI"><Description>daw_james_jesse</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x03"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options89=Actv00Stop00OutO00
+Name90=Output daw_james_drums
+Incoming90=Pres080000
+Outgoing90=MID3<Outgoing Action="MIDI"><Description>daw_james_drums</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x04"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options90=Actv00Stop00OutO00
+Name91=Output daw_james_vol
+Incoming91=Pres080000
+Outgoing91=MID3<Outgoing Action="MIDI"><Description>daw_james_vol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x05"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options91=Actv00Stop00OutO00
+Name92=Output daw_james_click
+Incoming92=Pres080000
+Outgoing92=MID3<Outgoing Action="MIDI"><Description>daw_james_click</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x06"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options92=Actv00Stop00OutO00
+Name93=Output daw_james_tbvol
+Incoming93=Pres080000
+Outgoing93=MID3<Outgoing Action="MIDI"><Description>daw_james_tbvol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x07"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options93=Actv00Stop00OutO00
+Name94=Output daw_james_james_lrc
+Incoming94=Pres080000
+Outgoing94=MID3<Outgoing Action="MIDI"><Description>daw_james_james_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x08"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options94=Actv00Stop00OutO00
+Name95=Output daw_james_jesse_lrc
+Incoming95=Pres080000
+Outgoing95=MID3<Outgoing Action="MIDI"><Description>daw_james_jesse_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x09"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options95=Actv00Stop00OutO00
+Name96=Output daw_james_mitch_lrc
+Incoming96=Pres080000
+Outgoing96=MID3<Outgoing Action="MIDI"><Description>daw_james_mitch_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0A"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options96=Actv00Stop00OutO00
+Name97=Output daw_jesse_mitch
+Incoming97=Pres080000
+Outgoing97=MID3<Outgoing Action="MIDI"><Description>daw_jesse_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x01"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options97=Actv00Stop00OutO00
+Name98=Output daw_jesse_james
+Incoming98=Pres080000
+Outgoing98=MID3<Outgoing Action="MIDI"><Description>daw_jesse_james</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x02"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options98=Actv00Stop00OutO00
+Name99=Output daw_jesse_jesse
+Incoming99=Pres080000
+Outgoing99=MID3<Outgoing Action="MIDI"><Description>daw_jesse_jesse</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x03"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options99=Actv00Stop00OutO00
+Name100=Output daw_jesse_drums
+Incoming100=Pres080000
+Outgoing100=MID3<Outgoing Action="MIDI"><Description>daw_jesse_drums</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x04"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options100=Actv00Stop00OutO00
+Name101=Output daw_jesse_vol
+Incoming101=Pres080000
+Outgoing101=MID3<Outgoing Action="MIDI"><Description>daw_jesse_vol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x05"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options101=Actv00Stop00OutO00
+Name102=Output daw_jesse_click
+Incoming102=Pres080000
+Outgoing102=MID3<Outgoing Action="MIDI"><Description>daw_jesse_click</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x06"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options102=Actv00Stop00OutO00
+Name103=Output daw_jesse_tbvol
+Incoming103=Pres080000
+Outgoing103=MID3<Outgoing Action="MIDI"><Description>daw_jesse_tbvol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x07"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options103=Actv00Stop00OutO00
+Name104=Output daw_jesse_james_lrc
+Incoming104=Pres080000
+Outgoing104=MID3<Outgoing Action="MIDI"><Description>daw_jesse_james_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x08"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options104=Actv00Stop00OutO00
+Name105=Output daw_jesse_jesse_lrc
+Incoming105=Pres080000
+Outgoing105=MID3<Outgoing Action="MIDI"><Description>daw_jesse_jesse_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x09"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options105=Actv00Stop00OutO00
+Name106=Output daw_jesse_mitch_lrc
+Incoming106=Pres080000
+Outgoing106=MID3<Outgoing Action="MIDI"><Description>daw_jesse_mitch_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0A"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options106=Actv00Stop00OutO00
+Name107=Output song_blind
+Incoming107=Pres080000
+Outgoing107=MID3<Outgoing Action="MIDI"><Description>song_blind</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x64"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options107=Actv00Stop00OutO00
+Name108=Output song_old_pete
+Incoming108=Pres080000
+Outgoing108=MID3<Outgoing Action="MIDI"><Description>song_old_pete</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x65"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options108=Actv00Stop00OutO00
+Name109=Output song_sono
+Incoming109=Pres080000
+Outgoing109=MID3<Outgoing Action="MIDI"><Description>song_sono</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x66"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options109=Actv00Stop00OutO00
+Name110=Output song_petrichor
+Incoming110=Pres080000
+Outgoing110=MID3<Outgoing Action="MIDI"><Description>song_petrichor</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x67"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options110=Actv00Stop00OutO00
+Name111=Output song_space
+Incoming111=Pres080000
+Outgoing111=MID3<Outgoing Action="MIDI"><Description>song_space</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="NoteOn"><Channel num="1"/><Value1 num="0x68"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options111=Actv00Stop00OutO00
+Name112=Shut Down All
+Incoming112=Pres080000
+Outgoing112=Pres020005Setup
+Options112=Actv01Stop00OutO00
+
+[Preset.3]
+Name=Update
+Active=1
+PresetSwitchIgnore=0
+Name0=Update fx_lowcut
+Incoming0=Tim0TimT0008t_update
+Outgoing0=MID3<Outgoing Action="MIDI"><Description>fx_lowcut</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x02"/><Value2 var="gd"/></Simple></Outgoing>
+Options0=Actv01Stop00OutO00StMa00000005if(gc==1940)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name1=Update fx_hicut
+Incoming1=Tim0TimT0008t_update
+Outgoing1=MID3<Outgoing Action="MIDI"><Description>fx_hicut</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x03"/><Value2 var="ge"/></Simple></Outgoing>
+Options1=Actv01Stop00OutO00StMa00000005if(gc==1920)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name2=Update fx_dist
+Incoming2=Tim0TimT0008t_update
+Outgoing2=MID3<Outgoing Action="MIDI"><Description>fx_dist</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x04"/><Value2 var="gg"/></Simple></Outgoing>
+Options2=Actv01Stop00OutO00StMa00000005if(gc==1900)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name3=Update fx_delay
+Incoming3=Tim0TimT0008t_update
+Outgoing3=MID3<Outgoing Action="MIDI"><Description>fx_delay</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x05"/><Value2 var="gh"/></Simple></Outgoing>
+Options3=Actv01Stop00OutO00StMa00000005if(gc==1880)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name4=Update fx_s_delay_beat
+Incoming4=Tim0TimT0008t_update
+Outgoing4=MID3<Outgoing Action="MIDI"><Description>fx_s_delay_beat</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x06"/><Value2 var="gi"/></Simple></Outgoing>
+Options4=Actv01Stop00OutO00StMa00000005if(gc==1860)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name5=Update fx_s_delay_fdbk
+Incoming5=Tim0TimT0008t_update
+Outgoing5=MID3<Outgoing Action="MIDI"><Description>fx_s_delay_fdbk</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x07"/><Value2 var="gj"/></Simple></Outgoing>
+Options5=Actv01Stop00OutO00StMa00000005if(gc==1840)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name6=Update fx_s_delay_drywet
+Incoming6=Tim0TimT0008t_update
+Outgoing6=MID3<Outgoing Action="MIDI"><Description>fx_s_delay_drywet</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x08"/><Value2 var="gk"/></Simple></Outgoing>
+Options6=Actv01Stop00OutO00StMa00000005if(gc==1820)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name7=Update fx_reverb
+Incoming7=Tim0TimT0008t_update
+Outgoing7=MID3<Outgoing Action="MIDI"><Description>fx_reverb</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x09"/><Value2 var="gl"/></Simple></Outgoing>
+Options7=Actv01Stop00OutO00StMa00000005if(gc==1800)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name8=Update fx_octaver
+Incoming8=Tim0TimT0008t_update
+Outgoing8=MID3<Outgoing Action="MIDI"><Description>fx_octaver</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x0A"/><Value2 var="gm"/></Simple></Outgoing>
+Options8=Actv01Stop00OutO00StMa00000005if(gc==1780)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name9=Update fx_amp
+Incoming9=Tim0TimT0008t_update
+Outgoing9=MID3<Outgoing Action="MIDI"><Description>fx_amp</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x0B"/><Value2 var="gn"/></Simple></Outgoing>
+Options9=Actv01Stop00OutO00StMa00000005if(gc==1760)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name10=Update fx_volume
+Incoming10=Tim0TimT0008t_update
+Outgoing10=MID3<Outgoing Action="MIDI"><Description>fx_volume</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x0C"/><Value2 var="go"/></Simple></Outgoing>
+Options10=Actv01Stop00OutO00StMa00000005if(gc==1740)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name11=Update fx_exp
+Incoming11=Tim0TimT0008t_update
+Outgoing11=MID3<Outgoing Action="MIDI"><Description>fx_exp</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x0D"/><Value2 var="gp"/></Simple></Outgoing>
+Options11=Actv01Stop00OutO00StMa00000005if(gc==1720)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name12=Update daw_talkback
+Incoming12=Tim0TimT0008t_update
+Outgoing12=MID3<Outgoing Action="MIDI"><Description>daw_talkback</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x16"/><Value2 var="gq"/></Simple></Outgoing>
+Options12=Actv01Stop00OutO00StMa00000005if(gc==1700)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name13=Update daw_bass_out
+Incoming13=Tim0TimT0008t_update
+Outgoing13=MID3<Outgoing Action="MIDI"><Description>daw_bass_out</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x17"/><Value2 var="gr"/></Simple></Outgoing>
+Options13=Actv01Stop00OutO00StMa00000005if(gc==1680)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name14=Update daw_drums_out
+Incoming14=Tim0TimT0008t_update
+Outgoing14=MID3<Outgoing Action="MIDI"><Description>daw_drums_out</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x18"/><Value2 var="gs"/></Simple></Outgoing>
+Options14=Actv01Stop00OutO00StMa00000005if(gc==1660)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name15=Update daw_level_james
+Incoming15=Tim0TimT0008t_update
+Outgoing15=MID3<Outgoing Action="MIDI"><Description>daw_level_james</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x19"/><Value2 var="gt"/></Simple></Outgoing>
+Options15=Actv01Stop00OutO00StMa00000005if(gc==1640)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name16=Update daw_level_jesse
+Incoming16=Tim0TimT0008t_update
+Outgoing16=MID3<Outgoing Action="MIDI"><Description>daw_level_jesse</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x1A"/><Value2 var="gu"/></Simple></Outgoing>
+Options16=Actv01Stop00OutO00StMa00000005if(gc==1620)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name17=Update daw_level_in_mitch
+Incoming17=Tim0TimT0008t_update
+Outgoing17=MID3<Outgoing Action="MIDI"><Description>daw_level_in_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x1B"/><Value2 var="gv"/></Simple></Outgoing>
+Options17=Actv01Stop00OutO00StMa00000005if(gc==1600)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name18=Update daw_level_out_mitch
+Incoming18=Tim0TimT0008t_update
+Outgoing18=MID3<Outgoing Action="MIDI"><Description>daw_level_out_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x1C"/><Value2 var="gw"/></Simple></Outgoing>
+Options18=Actv01Stop00OutO00StMa00000005if(gc==1580)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name19=Update hb_mitch_mitch
+Incoming19=Tim0TimT0008t_update
+Outgoing19=MID3<Outgoing Action="MIDI"><Description>hb_mitch_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x01"/><Value2 var="gx"/></Simple></Outgoing>
+Options19=Actv01Stop00OutO00StMa00000005if(gc==1560)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name20=Update hb_mitch_james
+Incoming20=Tim0TimT0008t_update
+Outgoing20=MID3<Outgoing Action="MIDI"><Description>hb_mitch_james</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x02"/><Value2 var="gy"/></Simple></Outgoing>
+Options20=Actv01Stop00OutO00StMa00000005if(gc==1540)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name21=Update hb_mitch_jesse
+Incoming21=Tim0TimT0008t_update
+Outgoing21=MID3<Outgoing Action="MIDI"><Description>hb_mitch_jesse</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x03"/><Value2 var="gz"/></Simple></Outgoing>
+Options21=Actv01Stop00OutO00StMa00000005if(gc==1520)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name22=Update hb_mitch_drums
+Incoming22=Tim0TimT0008t_update
+Outgoing22=MID3<Outgoing Action="MIDI"><Description>hb_mitch_drums</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x04"/><Value2 var="g0"/></Simple></Outgoing>
+Options22=Actv01Stop00OutO00StMa00000005if(gc==1500)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name23=Update hb_mitch_vol
+Incoming23=Tim0TimT0008t_update
+Outgoing23=MID3<Outgoing Action="MIDI"><Description>hb_mitch_vol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x05"/><Value2 var="g1"/></Simple></Outgoing>
+Options23=Actv01Stop00OutO00StMa00000005if(gc==1480)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name24=Update hb_mitch_click
+Incoming24=Tim0TimT0008t_update
+Outgoing24=MID3<Outgoing Action="MIDI"><Description>hb_mitch_click</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x06"/><Value2 var="g2"/></Simple></Outgoing>
+Options24=Actv01Stop00OutO00StMa00000005if(gc==1460)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name25=Update hb_mitch_tbvol
+Incoming25=Tim0TimT0008t_update
+Outgoing25=MID3<Outgoing Action="MIDI"><Description>hb_mitch_tbvol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x07"/><Value2 var="g3"/></Simple></Outgoing>
+Options25=Actv01Stop00OutO00StMa00000005if(gc==1440)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name26=Update hb_mitch_solo
+Incoming26=Tim0TimT0008t_update
+Outgoing26=MID3<Outgoing Action="MIDI"><Description>hb_mitch_solo</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x08"/><Value2 var="g4"/></Simple></Outgoing>
+Options26=Actv01Stop00OutO00StMa00000005if(gc==1420)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name27=Update hb_mitch_tbio
+Incoming27=Tim0TimT0008t_update
+Outgoing27=MID3<Outgoing Action="MIDI"><Description>hb_mitch_tbio</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x09"/><Value2 var="g5"/></Simple></Outgoing>
+Options27=Actv01Stop00OutO00StMa00000005if(gc==1400)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name28=Update hb_mitch_rec
+Incoming28=Tim0TimT0008t_update
+Outgoing28=MID3<Outgoing Action="MIDI"><Description>hb_mitch_rec</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0A"/><Value2 var="g6"/></Simple></Outgoing>
+Options28=Actv01Stop00OutO00StMa00000005if(gc==1380)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name29=Update hb_mitch_james_lrc
+Incoming29=Tim0TimT0008t_update
+Outgoing29=MID3<Outgoing Action="MIDI"><Description>hb_mitch_james_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0B"/><Value2 var="g7"/></Simple></Outgoing>
+Options29=Actv01Stop00OutO00StMa00000005if(gc==1360)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name30=Update hb_mitch_jesse_lrc
+Incoming30=Tim0TimT0008t_update
+Outgoing30=MID3<Outgoing Action="MIDI"><Description>hb_mitch_jesse_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0C"/><Value2 var="g8"/></Simple></Outgoing>
+Options30=Actv01Stop00OutO00StMa00000005if(gc==1340)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name31=Update hb_mitch_mitch_lrc
+Incoming31=Tim0TimT0008t_update
+Outgoing31=MID3<Outgoing Action="MIDI"><Description>hb_mitch_mitch_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0D"/><Value2 var="g9"/></Simple></Outgoing>
+Options31=Actv01Stop00OutO00StMa00000005if(gc==1320)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name32=Update hb_bass_out
+Incoming32=Tim0TimT0008t_update
+Outgoing32=MID3<Outgoing Action="MIDI"><Description>hb_bass_out</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0E"/><Value2 var="ha"/></Simple></Outgoing>
+Options32=Actv01Stop00OutO00StMa00000005if(gc==1300)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name33=Update hb_drums_out
+Incoming33=Tim0TimT0008t_update
+Outgoing33=MID3<Outgoing Action="MIDI"><Description>hb_drums_out</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0F"/><Value2 var="hb"/></Simple></Outgoing>
+Options33=Actv01Stop00OutO00StMa00000005if(gc==1280)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name34=Update hb_level_james
+Incoming34=Tim0TimT0008t_update
+Outgoing34=MID3<Outgoing Action="MIDI"><Description>hb_level_james</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x10"/><Value2 var="hc"/></Simple></Outgoing>
+Options34=Actv01Stop00OutO00StMa00000005if(gc==1260)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name35=Update hb_level_jesse
+Incoming35=Tim0TimT0008t_update
+Outgoing35=MID3<Outgoing Action="MIDI"><Description>hb_level_jesse</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x11"/><Value2 var="hd"/></Simple></Outgoing>
+Options35=Actv01Stop00OutO00StMa00000005if(gc==1240)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name36=Update hb_level_in_mitch
+Incoming36=Tim0TimT0008t_update
+Outgoing36=MID3<Outgoing Action="MIDI"><Description>hb_level_in_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x12"/><Value2 var="he"/></Simple></Outgoing>
+Options36=Actv01Stop00OutO00StMa00000005if(gc==1220)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name37=Update hb_level_out_mitch
+Incoming37=Tim0TimT0008t_update
+Outgoing37=MID3<Outgoing Action="MIDI"><Description>hb_level_out_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x13"/><Value2 var="hg"/></Simple></Outgoing>
+Options37=Actv01Stop00OutO00StMa00000005if(gc==1200)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name38=Update hb_amp
+Incoming38=Tim0TimT0008t_update
+Outgoing38=MID3<Outgoing Action="MIDI"><Description>hb_amp</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x14"/><Value2 var="hh"/></Simple></Outgoing>
+Options38=Actv01Stop00OutO00StMa00000005if(gc==1180)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name39=Update hb_s_delay_beat
+Incoming39=Tim0TimT0008t_update
+Outgoing39=MID3<Outgoing Action="MIDI"><Description>hb_s_delay_beat</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x15"/><Value2 var="hi"/></Simple></Outgoing>
+Options39=Actv01Stop00OutO00StMa00000005if(gc==1160)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name40=Update hb_s_delay_fdbk
+Incoming40=Tim0TimT0008t_update
+Outgoing40=MID3<Outgoing Action="MIDI"><Description>hb_s_delay_fdbk</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x16"/><Value2 var="hj"/></Simple></Outgoing>
+Options40=Actv01Stop00OutO00StMa00000005if(gc==1140)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name41=Update hb_s_delay_drywet
+Incoming41=Tim0TimT0008t_update
+Outgoing41=MID3<Outgoing Action="MIDI"><Description>hb_s_delay_drywet</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x17"/><Value2 var="hk"/></Simple></Outgoing>
+Options41=Actv01Stop00OutO00StMa00000005if(gc==1120)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name42=Update hb_james_mitch
+Incoming42=Tim0TimT0008t_update
+Outgoing42=MID3<Outgoing Action="MIDI"><Description>hb_james_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x01"/><Value2 var="hl"/></Simple></Outgoing>
+Options42=Actv01Stop00OutO00StMa00000005if(gc==1100)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name43=Update hb_james_james
+Incoming43=Tim0TimT0008t_update
+Outgoing43=MID3<Outgoing Action="MIDI"><Description>hb_james_james</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x02"/><Value2 var="hm"/></Simple></Outgoing>
+Options43=Actv01Stop00OutO00StMa00000005if(gc==1080)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name44=Update hb_james_jesse
+Incoming44=Tim0TimT0008t_update
+Outgoing44=MID3<Outgoing Action="MIDI"><Description>hb_james_jesse</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x03"/><Value2 var="hn"/></Simple></Outgoing>
+Options44=Actv01Stop00OutO00StMa00000005if(gc==1060)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name45=Update hb_james_drums
+Incoming45=Tim0TimT0008t_update
+Outgoing45=MID3<Outgoing Action="MIDI"><Description>hb_james_drums</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x04"/><Value2 var="ho"/></Simple></Outgoing>
+Options45=Actv01Stop00OutO00StMa00000005if(gc==1040)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name46=Update hb_james_vol
+Incoming46=Tim0TimT0008t_update
+Outgoing46=MID3<Outgoing Action="MIDI"><Description>hb_james_vol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x05"/><Value2 var="hp"/></Simple></Outgoing>
+Options46=Actv01Stop00OutO00StMa00000005if(gc==1020)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name47=Update hb_james_click
+Incoming47=Tim0TimT0008t_update
+Outgoing47=MID3<Outgoing Action="MIDI"><Description>hb_james_click</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x06"/><Value2 var="hq"/></Simple></Outgoing>
+Options47=Actv01Stop00OutO00StMa00000005if(gc==1000)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name48=Update hb_james_tbvol
+Incoming48=Tim0TimT0008t_update
+Outgoing48=MID3<Outgoing Action="MIDI"><Description>hb_james_tbvol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x07"/><Value2 var="hr"/></Simple></Outgoing>
+Options48=Actv01Stop00OutO00StMa00000005if(gc==980)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name49=Update hb_james_solo
+Incoming49=Tim0TimT0008t_update
+Outgoing49=MID3<Outgoing Action="MIDI"><Description>hb_james_solo</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x08"/><Value2 var="hs"/></Simple></Outgoing>
+Options49=Actv01Stop00OutO00StMa00000005if(gc==960)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name50=Update hb_james_tbio
+Incoming50=Tim0TimT0008t_update
+Outgoing50=MID3<Outgoing Action="MIDI"><Description>hb_james_tbio</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x09"/><Value2 var="ht"/></Simple></Outgoing>
+Options50=Actv01Stop00OutO00StMa00000005if(gc==940)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name51=Update hb_james_rec
+Incoming51=Tim0TimT0008t_update
+Outgoing51=MID3<Outgoing Action="MIDI"><Description>hb_james_rec</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0A"/><Value2 var="hu"/></Simple></Outgoing>
+Options51=Actv01Stop00OutO00StMa00000005if(gc==920)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name52=Update hb_james_james_lrc
+Incoming52=Tim0TimT0008t_update
+Outgoing52=MID3<Outgoing Action="MIDI"><Description>hb_james_james_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0B"/><Value2 var="hv"/></Simple></Outgoing>
+Options52=Actv01Stop00OutO00StMa00000005if(gc==900)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name53=Update hb_james_jesse_lrc
+Incoming53=Tim0TimT0008t_update
+Outgoing53=MID3<Outgoing Action="MIDI"><Description>hb_james_jesse_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0C"/><Value2 var="hw"/></Simple></Outgoing>
+Options53=Actv01Stop00OutO00StMa00000005if(gc==880)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name54=Update hb_james_mitch_lrc
+Incoming54=Tim0TimT0008t_update
+Outgoing54=MID3<Outgoing Action="MIDI"><Description>hb_james_mitch_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0D"/><Value2 var="hx"/></Simple></Outgoing>
+Options54=Actv01Stop00OutO00StMa00000005if(gc==860)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name55=Update hb_jesse_mitch
+Incoming55=Tim0TimT0008t_update
+Outgoing55=MID3<Outgoing Action="MIDI"><Description>hb_jesse_mitch</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x01"/><Value2 var="hy"/></Simple></Outgoing>
+Options55=Actv01Stop00OutO00StMa00000005if(gc==840)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name56=Update hb_jesse_james
+Incoming56=Tim0TimT0008t_update
+Outgoing56=MID3<Outgoing Action="MIDI"><Description>hb_jesse_james</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x02"/><Value2 var="hz"/></Simple></Outgoing>
+Options56=Actv01Stop00OutO00StMa00000005if(gc==820)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name57=Update hb_jesse_jesse
+Incoming57=Tim0TimT0008t_update
+Outgoing57=MID3<Outgoing Action="MIDI"><Description>hb_jesse_jesse</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x03"/><Value2 var="h0"/></Simple></Outgoing>
+Options57=Actv01Stop00OutO00StMa00000005if(gc==800)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name58=Update hb_jesse_drums
+Incoming58=Tim0TimT0008t_update
+Outgoing58=MID3<Outgoing Action="MIDI"><Description>hb_jesse_drums</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x04"/><Value2 var="h1"/></Simple></Outgoing>
+Options58=Actv01Stop00OutO00StMa00000005if(gc==780)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name59=Update hb_jesse_vol
+Incoming59=Tim0TimT0008t_update
+Outgoing59=MID3<Outgoing Action="MIDI"><Description>hb_jesse_vol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x05"/><Value2 var="h2"/></Simple></Outgoing>
+Options59=Actv01Stop00OutO00StMa00000005if(gc==760)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name60=Update hb_jesse_click
+Incoming60=Tim0TimT0008t_update
+Outgoing60=MID3<Outgoing Action="MIDI"><Description>hb_jesse_click</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x06"/><Value2 var="h3"/></Simple></Outgoing>
+Options60=Actv01Stop00OutO00StMa00000005if(gc==740)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name61=Update hb_jesse_tbvol
+Incoming61=Tim0TimT0008t_update
+Outgoing61=MID3<Outgoing Action="MIDI"><Description>hb_jesse_tbvol</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x07"/><Value2 var="h4"/></Simple></Outgoing>
+Options61=Actv01Stop00OutO00StMa00000005if(gc==720)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name62=Update hb_jesse_solo
+Incoming62=Tim0TimT0008t_update
+Outgoing62=MID3<Outgoing Action="MIDI"><Description>hb_jesse_solo</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x08"/><Value2 var="h5"/></Simple></Outgoing>
+Options62=Actv01Stop00OutO00StMa00000005if(gc==700)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name63=Update hb_jesse_tbio
+Incoming63=Tim0TimT0008t_update
+Outgoing63=MID3<Outgoing Action="MIDI"><Description>hb_jesse_tbio</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x09"/><Value2 var="h6"/></Simple></Outgoing>
+Options63=Actv01Stop00OutO00StMa00000005if(gc==680)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name64=Update hb_jesse_rec
+Incoming64=Tim0TimT0008t_update
+Outgoing64=MID3<Outgoing Action="MIDI"><Description>hb_jesse_rec</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0A"/><Value2 var="h7"/></Simple></Outgoing>
+Options64=Actv01Stop00OutO00StMa00000005if(gc==660)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name65=Update hb_jesse_james_lrc
+Incoming65=Tim0TimT0008t_update
+Outgoing65=MID3<Outgoing Action="MIDI"><Description>hb_jesse_james_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0B"/><Value2 var="h8"/></Simple></Outgoing>
+Options65=Actv01Stop00OutO00StMa00000005if(gc==640)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name66=Update hb_jesse_jesse_lrc
+Incoming66=Tim0TimT0008t_update
+Outgoing66=MID3<Outgoing Action="MIDI"><Description>hb_jesse_jesse_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0C"/><Value2 var="h9"/></Simple></Outgoing>
+Options66=Actv01Stop00OutO00StMa00000005if(gc==620)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name67=Update hb_jesse_mitch_lrc
+Incoming67=Tim0TimT0008t_update
+Outgoing67=MID3<Outgoing Action="MIDI"><Description>hb_jesse_mitch_lrc</Description><Ports><Port>TouchOSC Bridge</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0D"/><Value2 var="ja"/></Simple></Outgoing>
+Options67=Actv01Stop00OutO00StMa00000005if(gc==600)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name68=Update daw_mitch_mitch
+Incoming68=Tim0TimT0008t_update
+Outgoing68=MID3<Outgoing Action="MIDI"><Description>daw_mitch_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x01"/><Value2 var="jb"/></Simple></Outgoing>
+Options68=Actv01Stop00OutO00StMa00000005if(gc==580)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name69=Update daw_mitch_james
+Incoming69=Tim0TimT0008t_update
+Outgoing69=MID3<Outgoing Action="MIDI"><Description>daw_mitch_james</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x02"/><Value2 var="jc"/></Simple></Outgoing>
+Options69=Actv01Stop00OutO00StMa00000005if(gc==560)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name70=Update daw_mitch_jesse
+Incoming70=Tim0TimT0008t_update
+Outgoing70=MID3<Outgoing Action="MIDI"><Description>daw_mitch_jesse</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x03"/><Value2 var="jd"/></Simple></Outgoing>
+Options70=Actv01Stop00OutO00StMa00000005if(gc==540)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name71=Update daw_mitch_drums
+Incoming71=Tim0TimT0008t_update
+Outgoing71=MID3<Outgoing Action="MIDI"><Description>daw_mitch_drums</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x04"/><Value2 var="je"/></Simple></Outgoing>
+Options71=Actv01Stop00OutO00StMa00000005if(gc==520)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name72=Update daw_mitch_vol
+Incoming72=Tim0TimT0008t_update
+Outgoing72=MID3<Outgoing Action="MIDI"><Description>daw_mitch_vol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x05"/><Value2 var="jg"/></Simple></Outgoing>
+Options72=Actv01Stop00OutO00StMa00000005if(gc==500)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name73=Update daw_mitch_click
+Incoming73=Tim0TimT0008t_update
+Outgoing73=MID3<Outgoing Action="MIDI"><Description>daw_mitch_click</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x06"/><Value2 var="jh"/></Simple></Outgoing>
+Options73=Actv01Stop00OutO00StMa00000005if(gc==480)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name74=Update daw_mitch_tbvol
+Incoming74=Tim0TimT0008t_update
+Outgoing74=MID3<Outgoing Action="MIDI"><Description>daw_mitch_tbvol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x07"/><Value2 var="ji"/></Simple></Outgoing>
+Options74=Actv01Stop00OutO00StMa00000005if(gc==460)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name75=Update daw_mitch_james_lrc
+Incoming75=Tim0TimT0008t_update
+Outgoing75=MID3<Outgoing Action="MIDI"><Description>daw_mitch_james_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x08"/><Value2 var="jj"/></Simple></Outgoing>
+Options75=Actv01Stop00OutO00StMa00000005if(gc==440)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name76=Update daw_mitch_jesse_lrc
+Incoming76=Tim0TimT0008t_update
+Outgoing76=MID3<Outgoing Action="MIDI"><Description>daw_mitch_jesse_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x09"/><Value2 var="jk"/></Simple></Outgoing>
+Options76=Actv01Stop00OutO00StMa00000005if(gc==420)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name77=Update daw_mitch_mitch_lrc
+Incoming77=Tim0TimT0008t_update
+Outgoing77=MID3<Outgoing Action="MIDI"><Description>daw_mitch_mitch_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="2"/><Value1 num="0x0A"/><Value2 var="jl"/></Simple></Outgoing>
+Options77=Actv01Stop00OutO00StMa00000005if(gc==400)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name78=Update daw_james_mitch
+Incoming78=Tim0TimT0008t_update
+Outgoing78=MID3<Outgoing Action="MIDI"><Description>daw_james_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x01"/><Value2 var="jm"/></Simple></Outgoing>
+Options78=Actv01Stop00OutO00StMa00000005if(gc==380)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name79=Update daw_james_james
+Incoming79=Tim0TimT0008t_update
+Outgoing79=MID3<Outgoing Action="MIDI"><Description>daw_james_james</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x02"/><Value2 var="jn"/></Simple></Outgoing>
+Options79=Actv01Stop00OutO00StMa00000005if(gc==360)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name80=Update daw_james_jesse
+Incoming80=Tim0TimT0008t_update
+Outgoing80=MID3<Outgoing Action="MIDI"><Description>daw_james_jesse</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x03"/><Value2 var="jo"/></Simple></Outgoing>
+Options80=Actv01Stop00OutO00StMa00000005if(gc==340)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name81=Update daw_james_drums
+Incoming81=Tim0TimT0008t_update
+Outgoing81=MID3<Outgoing Action="MIDI"><Description>daw_james_drums</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x04"/><Value2 var="jp"/></Simple></Outgoing>
+Options81=Actv01Stop00OutO00StMa00000005if(gc==320)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name82=Update daw_james_vol
+Incoming82=Tim0TimT0008t_update
+Outgoing82=MID3<Outgoing Action="MIDI"><Description>daw_james_vol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x05"/><Value2 var="jq"/></Simple></Outgoing>
+Options82=Actv01Stop00OutO00StMa00000005if(gc==300)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name83=Update daw_james_click
+Incoming83=Tim0TimT0008t_update
+Outgoing83=MID3<Outgoing Action="MIDI"><Description>daw_james_click</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x06"/><Value2 var="jr"/></Simple></Outgoing>
+Options83=Actv01Stop00OutO00StMa00000005if(gc==280)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name84=Update daw_james_tbvol
+Incoming84=Tim0TimT0008t_update
+Outgoing84=MID3<Outgoing Action="MIDI"><Description>daw_james_tbvol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x07"/><Value2 var="js"/></Simple></Outgoing>
+Options84=Actv01Stop00OutO00StMa00000005if(gc==260)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name85=Update daw_james_james_lrc
+Incoming85=Tim0TimT0008t_update
+Outgoing85=MID3<Outgoing Action="MIDI"><Description>daw_james_james_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x08"/><Value2 var="jt"/></Simple></Outgoing>
+Options85=Actv01Stop00OutO00StMa00000005if(gc==240)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name86=Update daw_james_jesse_lrc
+Incoming86=Tim0TimT0008t_update
+Outgoing86=MID3<Outgoing Action="MIDI"><Description>daw_james_jesse_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x09"/><Value2 var="ju"/></Simple></Outgoing>
+Options86=Actv01Stop00OutO00StMa00000005if(gc==220)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name87=Update daw_james_mitch_lrc
+Incoming87=Tim0TimT0008t_update
+Outgoing87=MID3<Outgoing Action="MIDI"><Description>daw_james_mitch_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="3"/><Value1 num="0x0A"/><Value2 var="jv"/></Simple></Outgoing>
+Options87=Actv01Stop00OutO00StMa00000005if(gc==200)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name88=Update daw_jesse_mitch
+Incoming88=Tim0TimT0008t_update
+Outgoing88=MID3<Outgoing Action="MIDI"><Description>daw_jesse_mitch</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x01"/><Value2 var="jw"/></Simple></Outgoing>
+Options88=Actv01Stop00OutO00StMa00000005if(gc==180)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name89=Update daw_jesse_james
+Incoming89=Tim0TimT0008t_update
+Outgoing89=MID3<Outgoing Action="MIDI"><Description>daw_jesse_james</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x02"/><Value2 var="jx"/></Simple></Outgoing>
+Options89=Actv01Stop00OutO00StMa00000005if(gc==160)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name90=Update daw_jesse_jesse
+Incoming90=Tim0TimT0008t_update
+Outgoing90=MID3<Outgoing Action="MIDI"><Description>daw_jesse_jesse</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x03"/><Value2 var="jy"/></Simple></Outgoing>
+Options90=Actv01Stop00OutO00StMa00000005if(gc==140)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name91=Update daw_jesse_drums
+Incoming91=Tim0TimT0008t_update
+Outgoing91=MID3<Outgoing Action="MIDI"><Description>daw_jesse_drums</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x04"/><Value2 var="jz"/></Simple></Outgoing>
+Options91=Actv01Stop00OutO00StMa00000005if(gc==120)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name92=Update daw_jesse_vol
+Incoming92=Tim0TimT0008t_update
+Outgoing92=MID3<Outgoing Action="MIDI"><Description>daw_jesse_vol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x05"/><Value2 var="j0"/></Simple></Outgoing>
+Options92=Actv01Stop00OutO00StMa00000005if(gc==100)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name93=Update daw_jesse_click
+Incoming93=Tim0TimT0008t_update
+Outgoing93=MID3<Outgoing Action="MIDI"><Description>daw_jesse_click</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x06"/><Value2 var="j1"/></Simple></Outgoing>
+Options93=Actv01Stop00OutO00StMa00000005if(gc==80)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name94=Update daw_jesse_tbvol
+Incoming94=Tim0TimT0008t_update
+Outgoing94=MID3<Outgoing Action="MIDI"><Description>daw_jesse_tbvol</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x07"/><Value2 var="j2"/></Simple></Outgoing>
+Options94=Actv01Stop00OutO00StMa00000005if(gc==60)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name95=Update daw_jesse_james_lrc
+Incoming95=Tim0TimT0008t_update
+Outgoing95=MID3<Outgoing Action="MIDI"><Description>daw_jesse_james_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x08"/><Value2 var="j3"/></Simple></Outgoing>
+Options95=Actv01Stop00OutO00StMa00000005if(gc==40)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name96=Update daw_jesse_jesse_lrc
+Incoming96=Tim0TimT0008t_update
+Outgoing96=MID3<Outgoing Action="MIDI"><Description>daw_jesse_jesse_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x09"/><Value2 var="j4"/></Simple></Outgoing>
+Options96=Actv01Stop00OutO00StMa00000005if(gc==20)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+Name97=Update daw_jesse_mitch_lrc
+Incoming97=Tim0TimT0008t_update
+Outgoing97=MID3<Outgoing Action="MIDI"><Description>daw_jesse_mitch_lrc</Description><Ports><Port>Bome Virtual Port 1</Port></Ports><Simple Type="ControlChange"><Channel num="4"/><Value1 num="0x0A"/><Value2 var="j5"/></Simple></Outgoing>
+Options97=Actv01Stop00OutO00StMa00000005if(gc==0)goto0004NEXTnoexecutelabel0004NEXTgc=gc+20if(gc>=1960)gc=0
+
+[Project]
+Version=2
+Author=
+AuthorContact=
+Comments=
+AuthorWWW=
+AuthorCopyright=
+DefaultInPorts=MIDA0000
+DefaultOutPorts=MIDA0000
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=xyN19y6d1rOfvB/RmEa4t2IJhFnbPAmpZLQ9CTycsYpCqACYBjeULUMB7NnquE5wApdZqrMEfP2uFd4/uOw8b1Zc+6k2VdwLR0GLlvChsklI2ZqQNoSgoRCo9S9j8RTxP8u3Uymvh+LLLxmA5Ih/jim4a/rUsI+uZOAIQyqFxAA=
+SignedBy-1=Mitchell Woodbine

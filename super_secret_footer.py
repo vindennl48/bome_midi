@@ -1,0 +1,2 @@
+footer_signature = "Signature-1=rsPwvVNjDrjWFs6L2cNkGjws/jG1Tz5OvGlfjgpkFJvgSlD0+ysk8zMiik9iJxqgiJFqwqmEZ2QQcIpmDdLWrMCXPMRuwuKyR91wmP/XXnSpZF4/iZKrDqE4DnhtPVc0A8zmrSBOfDzcud9g2728OedbS/DssMvfQhA8pRapBCk="
+footer_signed_by = "SignedBy-1=Mitchell Woodbine"
